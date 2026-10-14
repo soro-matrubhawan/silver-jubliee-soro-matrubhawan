@@ -1,0 +1,2608 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Jubilee (2000–2025/26) | Centre of Sri Aurobindo Integral Education, Matrubhawan Soro</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cinzel (Regal Headings), Plus Jakarta Sans (Clean Body), Caveat (Handwritten Polaroid & Chalk Notes) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royalGreen: {
+                            950: '#1E3F30',
+                            900: '#28523F',
+                            800: '#356952',
+                            700: '#468267',
+                            600: '#5B9A7D',
+                            100: '#EBF5F0',
+                            50: '#F5FAF7'
+                        },
+                        gold: {
+                            900: '#785206',
+                            700: '#AA7C11',
+                            500: '#D4AF37',
+                            400: '#E5C158',
+                            300: '#F3E5AB',
+                            100: '#FCF8E8'
+                        },
+                        pearl: '#FAF8F2'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        hand: ['Caveat', 'cursive']
+                    },
+                    animation: {
+                        'spin-slow': 'spin 42s linear infinite',
+                        'float': 'float 5s ease-in-out infinite',
+                        'pulse-gold': 'pulseGold 3s infinite',
+                        'bell-ring': 'bellRing 0.8s ease-in-out'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        pulseGold: {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(212, 175, 55, 0.35), 0 0 50px rgba(212, 175, 55, 0.15)' },
+                            '50%': { boxShadow: '0 0 35px rgba(212, 175, 55, 0.75), 0 0 70px rgba(243, 229, 171, 0.35)' }
+                        },
+                        bellRing: {
+                            '0%, 100%': { transform: 'rotate(0deg)' },
+                            '15%': { transform: 'rotate(24deg)' },
+                            '30%': { transform: 'rotate(-22deg)' },
+                            '45%': { transform: 'rotate(16deg)' },
+                            '60%': { transform: 'rotate(-12deg)' },
+                            '75%': { transform: 'rotate(8deg)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF8F2;
+            color: #1E3F30;
+            overflow-x: hidden;
+        }
+
+        /* Metallic Gold Text Gradient */
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #FFF3B0 0%, #D4AF37 45%, #AA7C11 75%, #F3E5AB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gold-dark-gradient {
+            background: linear-gradient(135deg, #8A620A 0%, #D4AF37 50%, #785206 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Gold Metallic Foil */
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #AA7C11 100%);
+        }
+
+        /* Vintage School Blackboard Texture (Faded Soft Slate-Green) */
+        .chalkboard {
+            background: radial-gradient(circle at center, #325C47 0%, #214031 100%);
+            border: 12px solid #9C6B3B;
+            box-shadow: inset 0 0 40px rgba(0,0,0,0.45), 0 18px 40px rgba(30,63,48,0.2);
+        }
+
+        /* Chalk Erase Animation */
+        .chalk-fade {
+            transition: opacity 0.35s ease, filter 0.35s ease, transform 0.35s ease;
+        }
+        .chalk-erasing {
+            opacity: 0;
+            filter: blur(6px);
+            transform: scale(0.97);
+        }
+
+        /* Polaroid Card Styling */
+        .polaroid-card {
+            background: #FFFFFF;
+            padding: 14px 14px 26px 14px;
+            box-shadow: 0 12px 30px -8px rgba(11, 59, 36, 0.18), 0 4px 10px rgba(0,0,0,0.06);
+            transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .polaroid-card:hover {
+            transform: translateY(-8px) rotate(0deg) scale(1.02) !important;
+            box-shadow: 0 22px 45px -10px rgba(212, 175, 55, 0.45), 0 10px 20px rgba(11, 59, 36, 0.2);
+            z-index: 20;
+        }
+
+        /* Subtle Heritage Pattern Overlay */
+        .heritage-bg {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.16) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #28523F;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #D4AF37, #AA7C11);
+            border-radius: 5px;
+        }
+
+        /* Print Media Support */
+        @media print {
+            header, footer, #toastContainer, #confettiCanvas, #igLightboxModal {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-500 selection:text-royalGreen-950">
+
+    <!-- Floating Golden Sparkle & Heart Particle Canvas -->
+    <canvas id="confettiCanvas" class="fixed inset-0 pointer-events-none z-50"></canvas>
+
+    <!-- Non-Blocking Custom Toast Notification Container -->
+    <div id="toastContainer" class="fixed top-24 right-4 z-50 flex flex-col gap-2.5 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+    <!-- Hidden SVG Fallback Data URI Generator Script for Logo -->
+    <script>
+        const FALLBACK_LOGO_SVG = "data:image/svg+xml;utf8," + encodeURIComponent(`
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+                <defs>
+                    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#F3E5AB"/>
+                        <stop offset="50%" stop-color="#D4AF37"/>
+                        <stop offset="100%" stop-color="#AA7C11"/>
+                    </linearGradient>
+                </defs>
+                <circle cx="120" cy="120" r="114" fill="#28523F" stroke="url(#goldGrad)" stroke-width="8"/>
+                <circle cx="120" cy="120" r="88" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="4 4"/>
+                <text x="120" y="62" text-anchor="middle" fill="#F3E5AB" font-family="Cinzel, serif" font-size="13" font-weight="bold" letter-spacing="2">SILVER JUBILEE</text>
+                <text x="120" y="128" text-anchor="middle" fill="url(#goldGrad)" font-family="Cinzel, serif" font-size="56" font-weight="900">25</text>
+                <text x="120" y="150" text-anchor="middle" fill="#FFFFFF" font-family="Cinzel, serif" font-size="12" font-weight="bold" letter-spacing="3">YEARS</text>
+                <text x="120" y="182" text-anchor="middle" fill="#F3E5AB" font-family="Cinzel, serif" font-size="11" font-weight="bold">MATRUBHAWAN SORO</text>
+                <text x="120" y="200" text-anchor="middle" fill="#D4AF37" font-family="sans-serif" font-size="10" font-weight="bold">ESTD 2000</text>
+            </svg>
+        `);
+    </script>
+
+    <!-- ==========================================
+         TOP ANNOUNCEMENT BAR
+         ========================================== -->
+    <div class="bg-royalGreen-950 text-gold-300 border-b border-gold-500/30 py-2 px-4 text-xs sm:text-sm relative z-40">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
+                <span class="font-medium tracking-wide text-gold-100">
+                    <strong class="text-gold-400 font-serif">ରୌପ୍ୟ ଜୟନ୍ତୀ ସମାରୋହ (Silver Jubilee):</strong> Dec 28 & 29, 2026 • Matrubhawan Soro (ESTD 2000)
+                </span>
+            </div>
+            <div class="flex items-center space-x-3 sm:space-x-4 ml-auto">
+                <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-brands fa-instagram text-gold-400"></i> <span class="hidden md:inline">@soro_matrubhawan</span>
+                </a>
+                <span class="text-gold-500/40">|</span>
+                <a href="https://www.facebook.com/profile.php?id=61594806363972&utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-brands fa-facebook text-gold-400"></i> <span class="hidden md:inline">Facebook Official</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         STICKY NAVIGATION BAR
+         ========================================== -->
+    <header id="navbar" class="sticky top-0 z-40 bg-royalGreen-900/95 backdrop-blur-md border-b-2 border-gold-500/40 shadow-xl transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo + Title -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="relative w-14 h-14 rounded-full p-0.5 bg-gold-gradient shadow-lg group-hover:scale-105 transition-transform flex-shrink-0">
+                        <img src="logo_t.jpg" alt="Matrubhawan Soro Silver Jubilee Logo" class="w-full h-full object-cover rounded-full bg-royalGreen-950" onerror="this.onerror=null; this.src=FALLBACK_LOGO_SVG;">
+                    </div>
+                    <div>
+                        <span class="block text-[10px] sm:text-xs uppercase tracking-[0.18em] text-gold-300 font-semibold">ESTD 2000 • 25th Years</span>
+                        <h1 class="font-serif font-bold text-base sm:text-lg md:text-xl text-white leading-tight group-hover:text-gold-300 transition">
+                            MATRUBHAWAN <span class="text-gold-400">SORO</span>
+                        </h1>
+                        <p class="text-[10px] text-emerald-200/80 hidden sm:block">Centre of Sri Aurobindo Integral Education</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden xl:flex items-center space-x-6 text-sm font-medium text-pearl/90">
+                    <a href="#nostalgia" class="hover:text-gold-300 transition py-1">Nostalgia</a>
+                    <a href="#journey" class="hover:text-gold-300 transition py-1">25-Yr Journey</a>
+                    <a href="#ig-gallery" class="hover:text-gold-300 transition py-1 flex items-center gap-1.5 text-gold-300 font-semibold">
+                        <i class="fa-brands fa-instagram"></i> Photo Gallery
+                    </a>
+                    <a href="#pillars" class="hover:text-gold-300 transition py-1">5 Pillars</a>
+                    <a href="#schedule" class="hover:text-gold-300 transition py-1">Schedule</a>
+                    <a href="#memory-wall" class="hover:text-gold-300 transition py-1">Smruti Phalaka</a>
+                    <a href="#alumni-pass" class="hover:text-gold-300 transition py-1">VIP Pass</a>
+                </nav>
+
+                <!-- Action Buttons: School Bell, Meditation Flute & Alumni Pass CTA -->
+                <div class="flex items-center gap-2 sm:gap-2.5">
+                    <!-- Interactive School Bell Button -->
+                    <button id="navBellBtn" onclick="ringSchoolBell()" title="Ring the Nostalgic Brass School Bell!" class="relative inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-royalGreen-950/90 hover:bg-royalGreen-800 text-gold-300 border border-gold-400/60 shadow-md hover:shadow-gold-500/20 transition-all active:scale-95 group">
+                        <i id="bellIcon" class="fa-solid fa-bell text-gold-400 text-sm sm:text-base group-hover:animate-bounce"></i>
+                        <span class="text-xs font-semibold tracking-wide hidden md:inline">ଘଣ୍ଟି ବଜାନ୍ତୁ</span>
+                        <span id="bellCounterBadge" class="bg-gold-500 text-royalGreen-950 text-[10px] font-extrabold px-1.5 py-0.5 rounded-full">250</span>
+                    </button>
+
+                    <!-- Peaceful Meditation Ambience Toggle -->
+                    <button id="meditationToggleBtn" onclick="toggleMeditationAmbience()" title="Toggle Peaceful Morning Meditation Ambience" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-royalGreen-950/90 hover:bg-royalGreen-800 text-emerald-200 border border-emerald-400/40 shadow-md transition-all active:scale-95 text-xs font-semibold">
+                        <i id="meditationIcon" class="fa-solid fa-spa text-gold-400"></i>
+                        <span id="meditationLabel" class="hidden sm:inline">Pranam Flute: Off</span>
+                    </button>
+
+                    <!-- Register Alumni CTA -->
+                    <a href="#alumni-pass" class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-bold text-xs sm:text-sm shadow-lg hover:brightness-110 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-id-card-clip"></i>
+                        <span>VIP Pass</span>
+                    </a>
+
+                    <!-- Mobile Hamburger Button -->
+                    <button id="mobileMenuBtn" onclick="toggleMobileMenu()" aria-label="Toggle Menu" class="xl:hidden text-gold-300 hover:text-white p-2 rounded-lg focus:outline-none border border-gold-500/30">
+                        <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-royalGreen-950 border-b border-gold-500/30 px-4 pt-3 pb-6 space-y-2.5 shadow-2xl">
+            <a href="#nostalgia" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg text-gold-100 hover:bg-royalGreen-800 text-sm">✨ Nostalgia Lane (Do You Remember?)</a>
+            <a href="#journey" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg text-gold-100 hover:bg-royalGreen-800 text-sm">🏛️ 25-Year Milestone Journey (2000–2026)</a>
+            <a href="#ig-gallery" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg text-gold-300 font-semibold hover:bg-royalGreen-800 text-sm">📸 Instagram Photo Gallery (@soro_matrubhawan)</a>
+            <a href="#pillars" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg text-gold-100 hover:bg-royalGreen-800 text-sm">🪷 The 5 Integral Education Pillars</a>
+            <a href="#schedule" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg text-gold-100 hover:bg-royalGreen-800 text-sm">📅 2-Day Jubilee Schedule (Dec 28 & 29)</a>
+            <a href="#memory-wall" onclick="toggleMobileMenu()" class="block py-2 px-3 rounded-lg text-gold-100 hover:bg-royalGreen-800 text-sm">📌 Smruti Phalaka (Pin Your Memory)</a>
+            <a href="#alumni-pass" onclick="toggleMobileMenu()" class="block py-2.5 px-4 rounded-xl bg-gold-gradient text-royalGreen-950 font-serif font-bold text-center text-sm shadow-md">🎓 Generate & Download Alumni VIP Pass</a>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         1. HERO SECTION: REGAL GREEN, GOLD & WHITE
+         ========================================== -->
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-royalGreen-950 via-royalGreen-900 to-royalGreen-800 text-white py-14 lg:py-20">
+        
+        <!-- Rotating 12-Petal Sri Aurobindo & The Mother Geometric Aura Backdrop -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-15 overflow-hidden">
+            <svg class="w-[620px] h-[620px] sm:w-[860px] sm:h-[860px] animate-spin-slow text-gold-400" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="95" stroke="currentColor" stroke-width="0.6" stroke-dasharray="3 3"/>
+                <circle cx="100" cy="100" r="78" stroke="currentColor" stroke-width="0.8"/>
+                <circle cx="100" cy="100" r="42" stroke="currentColor" stroke-width="1"/>
+                <circle cx="100" cy="100" r="18" stroke="currentColor" stroke-width="1.2"/>
+                <g stroke="currentColor" stroke-width="0.7">
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(0 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(30 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(60 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(90 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(120 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(150 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(180 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(210 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(240 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(270 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(300 100 100)"/>
+                    <ellipse cx="100" cy="60" rx="14" ry="38" transform="rotate(330 100 100)"/>
+                </g>
+            </svg>
+        </div>
+
+        <!-- Radial Gold Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[480px] h-[480px] bg-gold-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <!-- Odia & English Spiritual Invocation -->
+            <div class="inline-flex items-center gap-2.5 px-5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-gold-400/40 text-gold-300 text-xs sm:text-sm font-medium mb-7 shadow-lg">
+                <span class="text-gold-400">🪷</span>
+                <span>"ମା’ଙ୍କ ଆଲୋକରେ ୨୫ ବର୍ଷର ଗୌରବମୟ ଯାତ୍ରା" • 25 Glorious Years of Integral Education</span>
+                <span class="text-gold-400">🪷</span>
+            </div>
+
+            <!-- Centerpiece Uploaded Silver Jubilee Logo -->
+            <div class="relative mx-auto w-48 h-48 sm:w-60 sm:h-60 mb-8 animate-float">
+                <div class="absolute -inset-3 rounded-full bg-gradient-to-r from-gold-500 via-white to-gold-500 opacity-50 blur-xl animate-pulse"></div>
+                <div class="relative w-full h-full rounded-full p-2 bg-gradient-to-b from-gold-300 via-gold-500 to-gold-700 shadow-2xl animate-pulse-gold">
+                    <img id="heroLogoImg" src="logo_t.jpg" alt="Matrubhawan Soro 25th Years Silver Jubilee Emblem" class="w-full h-full object-contain rounded-full bg-black shadow-inner" onerror="this.onerror=null; this.src=FALLBACK_LOGO_SVG;">
+                </div>
+                <!-- Floating 2000 - 2025/26 Ribbon Badge -->
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-royalGreen-950 border-2 border-gold-400 text-gold-300 font-serif font-bold text-xs sm:text-sm px-5 py-1 rounded-full shadow-xl">
+                    ★ ESTD 2000 • SILVER JUBILEE ★
+                </div>
+            </div>
+
+            <!-- Main Regal Headings -->
+            <h2 class="font-serif font-extrabold text-3xl sm:text-5xl md:text-6xl tracking-tight leading-tight mt-6 mb-2">
+                <span class="block text-white drop-shadow">CENTRE OF SRI AUROBINDO</span>
+                <span class="text-gold-gradient drop-shadow-lg">INTEGRAL EDUCATION</span>
+            </h2>
+
+            <h3 class="font-serif text-xl sm:text-2xl md:text-3xl text-gold-300 font-semibold tracking-widest uppercase mb-4">
+                • MATRUBHAWAN SORO •
+            </h3>
+
+            <p class="font-hand text-2xl sm:text-3xl text-emerald-100 max-w-3xl mx-auto mb-8">
+                "Nurturing Individuals • Building Tomorrow — Where every morning began with Pranam, and every classroom felt like home..."
+            </p>
+
+            <!-- Interactive Nostalgic Trigger Bar -->
+            <div class="flex flex-wrap items-center justify-center gap-3.5 sm:gap-4 mb-12">
+                <button id="heroBellBtn" onclick="ringSchoolBell()" class="group relative inline-flex items-center gap-3 px-7 py-4 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-extrabold text-sm sm:text-base shadow-2xl hover:shadow-gold-400/50 transition-all transform hover:-translate-y-1 active:scale-95">
+                    <i class="fa-solid fa-bell text-lg animate-bounce"></i>
+                    <span>RING THE SCHOOL BELL (ଘଣ୍ଟି ବଜାନ୍ତୁ)</span>
+                </button>
+
+                <a href="#memory-wall" class="inline-flex items-center gap-2.5 px-6 py-4 rounded-full bg-white text-royalGreen-900 hover:bg-gold-100 font-serif font-bold text-sm sm:text-base shadow-xl border-2 border-gold-400 transition-all transform hover:-translate-y-1">
+                    <i class="fa-solid fa-camera-retro text-gold-700"></i>
+                    <span>Pin Your Childhood Memory</span>
+                </a>
+
+                <a href="#alumni-pass" class="inline-flex items-center gap-2.5 px-6 py-4 rounded-full bg-royalGreen-950/90 hover:bg-royalGreen-950 text-gold-300 font-serif font-bold text-sm sm:text-base border-2 border-gold-400/60 transition-all transform hover:-translate-y-1">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Download Alumni VIP Pass</span>
+                </a>
+            </div>
+
+            <!-- Live Countdown Timer to Grand Celebration (Dec 28, 2026 08:00 AM IST) -->
+            <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-md border border-gold-400/40 rounded-3xl p-5 sm:p-7 shadow-2xl">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-5 border-b border-gold-300/20 pb-4">
+                    <div class="text-center sm:text-left flex flex-col sm:flex-row items-center gap-3">
+                        <div class="w-11 h-11 rounded-2xl bg-gold-500/20 border border-gold-400 flex items-center justify-center text-gold-300">
+                            <i class="fa-solid fa-calendar-check text-lg"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs uppercase tracking-widest text-gold-300 block font-semibold">Grand Silver Jubilee Homecoming</span>
+                            <h4 class="font-serif font-bold text-base sm:text-lg text-white">December 28 & 29, 2026 (08:00 AM IST) • Soro</h4>
+                        </div>
+                    </div>
+                    <!-- Working Add to Google Calendar Link -->
+                    <a id="googleCalBtn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Matrubhawan+Soro+Silver+Jubilee+Celebration+(25+Years)&dates=20261228T023000Z/20261229T163000Z&details=25th+Anniversary+Silver+Jubilee+Homecoming+of+Centre+of+Sri+Aurobindo+Integral+Education+-+Matrubhawan+Soro+(ESTD+2000).+Nurturing+Individuals,+Building+Tomorrow.&location=Matrubhawan+Soro,+Balasore,+Odisha,+India" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/20 hover:bg-gold-500 hover:text-royalGreen-950 border border-gold-400 text-gold-200 text-xs font-bold transition shadow">
+                        <i class="fa-regular fa-calendar-plus"></i>
+                        <span>+ Add to Google Calendar</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-4 gap-3 sm:gap-5 text-center">
+                    <div class="bg-royalGreen-950/80 border border-gold-500/30 rounded-2xl p-3 sm:p-4">
+                        <span id="cd-days" class="font-serif font-extrabold text-2xl sm:text-4xl text-gold-400 block">74</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-emerald-200">Days</span>
+                    </div>
+                    <div class="bg-royalGreen-950/80 border border-gold-500/30 rounded-2xl p-3 sm:p-4">
+                        <span id="cd-hours" class="font-serif font-extrabold text-2xl sm:text-4xl text-gold-400 block">06</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-emerald-200">Hours</span>
+                    </div>
+                    <div class="bg-royalGreen-950/80 border border-gold-500/30 rounded-2xl p-3 sm:p-4">
+                        <span id="cd-mins" class="font-serif font-extrabold text-2xl sm:text-4xl text-gold-400 block">28</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-emerald-200">Minutes</span>
+                    </div>
+                    <div class="bg-royalGreen-950/80 border border-gold-500/30 rounded-2xl p-3 sm:p-4">
+                        <span id="cd-secs" class="font-serif font-extrabold text-2xl sm:text-4xl text-gold-400 block">45</span>
+                        <span class="text-[10px] sm:text-xs uppercase tracking-widest text-emerald-200">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Decorative Wave Divider at Bottom -->
+        <div class="absolute bottom-0 inset-x-0 overflow-hidden leading-none pointer-events-none">
+            <svg class="relative block w-full h-10 sm:h-16 text-pearl" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         2. "DO YOU REMEMBER?" NOSTALGIA CARDS & CHALKBOARD
+         ========================================== -->
+    <section id="nostalgia" class="py-16 sm:py-24 bg-pearl heritage-bg relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-4 py-1 rounded-full bg-royalGreen-100 text-royalGreen-800 border border-royalGreen-700/20 font-serif font-bold text-xs uppercase tracking-widest mb-3">
+                    ✨ ପିଲାଦିନର ସ୍ମୃତି • Walk Down Memory Lane ✨
+                </span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-royalGreen-950 mb-4">
+                    Close Your Eyes... <span class="text-gold-dark-gradient">Do You Remember?</span>
+                </h2>
+                <p class="text-gray-600 text-base sm:text-lg">
+                    Before busy careers and city traffic—there was a serene campus in Soro where every morning began with peace. Click <strong class="text-royalGreen-800">"I Miss This! ❤️"</strong> on the memories that still live in your heart.
+                </p>
+            </div>
+
+            <!-- Interactive Nostalgia Grid (6 Cards with localStorage persistence) -->
+            <div id="nostalgiaGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Populated dynamically via JavaScript -->
+            </div>
+
+            <!-- Interactive Vintage Green Classroom Blackboard -->
+            <div class="mt-16 chalkboard rounded-3xl p-6 sm:p-10 text-center text-white relative overflow-hidden">
+                <div class="max-w-3xl mx-auto">
+                    <div class="flex items-center justify-center gap-2 text-gold-300/90 text-xs uppercase tracking-widest mb-3">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <span>Interactive Classroom Blackboard • Matrubhawan Soro</span>
+                    </div>
+
+                    <div id="chalkBoardContent" class="chalk-fade min-h-[120px] flex flex-col items-center justify-center my-2">
+                        <p id="chalkQuoteText" class="font-hand text-3xl sm:text-4xl md:text-5xl text-white/95 leading-relaxed">
+                            "Silence is the language of the Soul. Remember how we sat together in morning meditation before the first lesson began?"
+                        </p>
+                        <p id="chalkQuoteAuthor" class="font-serif text-xs sm:text-sm text-gold-300 tracking-wider uppercase mt-3">
+                            — Morning Assembly Memory, Matrubhawan Soro
+                        </p>
+                    </div>
+
+                    <!-- Next Quote & Custom Chalk Message Controls -->
+                    <div class="mt-6 pt-6 border-t border-white/15 flex flex-col sm:flex-row items-center justify-center gap-3">
+                        <button id="nextChalkBtn" onclick="cycleChalkboardMemory()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-bold text-xs sm:text-sm shadow-lg hover:brightness-110 transition active:scale-95">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Next Chalk Quote ✍️</span>
+                        </button>
+
+                        <form onsubmit="writeCustomChalkMessage(event)" class="flex items-center gap-2 w-full sm:w-auto max-w-md">
+                            <input id="customChalkInput" type="text" maxlength="110" placeholder="Write your own chalk message on the board..." class="w-full sm:w-64 px-4 py-2 rounded-full bg-black/30 border border-gold-300/40 text-white placeholder-emerald-200/60 text-xs sm:text-sm focus:border-gold-400 outline-none font-hand text-lg">
+                            <button type="submit" class="px-4 py-2.5 rounded-full bg-white/15 hover:bg-white/25 text-gold-300 border border-gold-300/40 text-xs font-bold whitespace-nowrap transition">
+                                Write Chalk
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3. INTERACTIVE 25-YEAR MILESTONE EXPLORER (2000 - 2026)
+         ========================================== -->
+    <section id="journey" class="py-20 bg-gradient-to-b from-royalGreen-950 via-royalGreen-900 to-royalGreen-950 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-4 py-1 rounded-full bg-gold-500/20 text-gold-300 border border-gold-400/40 font-serif font-bold text-xs uppercase tracking-widest mb-3">
+                    🏛️ 2000 – 2025/26 • A Quarter Century of Light
+                </span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-white mb-4">
+                    Interactive <span class="text-gold-gradient">25-Year Sacred Odyssey</span>
+                </h2>
+                <p class="text-emerald-100/80 text-sm sm:text-base">
+                    Click any milestone era below to explore how Matrubhawan Soro blossomed from a humble sapling in 2000 into a beacon of Integral Education.
+                </p>
+            </div>
+
+            <!-- Interactive Milestone Era Selector Buttons -->
+            <div id="milestoneTabs" class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-10">
+                <!-- Populated dynamically via JS -->
+            </div>
+
+            <!-- Interactive Milestone Spotlight Display Panel -->
+            <div id="milestoneSpotlight" class="max-w-5xl mx-auto bg-white/10 backdrop-blur-md border-2 border-gold-400/50 rounded-3xl p-6 sm:p-10 shadow-2xl transition-all duration-300">
+                <!-- Populated dynamically via JS -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3B. CAMPUS & ALUMNI MOMENTS (@soro_matrubhawan) INSTAGRAM PHOTO GALLERY
+         ========================================== -->
+    <section id="ig-gallery" class="py-20 bg-pearl heritage-bg relative border-b border-gold-400/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Section Heading -->
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-royalGreen-900 text-gold-300 border border-gold-400/40 font-serif font-bold text-xs uppercase tracking-widest mb-3">
+                    <i class="fa-brands fa-instagram text-gold-400"></i> Official Instagram Feed • @soro_matrubhawan
+                </span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-royalGreen-950 mb-3">
+                    Campus & Alumni <span class="text-gold-dark-gradient">Instagram Gallery</span>
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Glimpses of our 25-year journey from <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="text-royalGreen-800 font-bold underline decoration-gold-500">@soro_matrubhawan</a>. Click any photo for full-screen view, or click <strong>"+ Add Post / Photo from Instagram"</strong> to pin any specific post link or campus photo!
+                </p>
+            </div>
+
+            <!-- Live-Style Instagram Profile Header Card -->
+            <div class="bg-gradient-to-r from-royalGreen-950 via-royalGreen-900 to-royalGreen-950 text-white rounded-3xl p-6 sm:p-8 border-2 border-gold-400 shadow-2xl mb-10">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+                    <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                        <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="relative w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-amber-400 via-pink-500 to-purple-600 shadow-xl flex-shrink-0 group">
+                            <img src="logo_t.jpg" alt="@soro_matrubhawan" class="w-full h-full object-cover rounded-full bg-black border-2 border-royalGreen-950 group-hover:scale-105 transition" onerror="this.onerror=null; this.src=FALLBACK_LOGO_SVG;">
+                            <span class="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-gold-500 text-royalGreen-950 flex items-center justify-center text-xs font-bold border-2 border-royalGreen-950" title="Official Silver Jubilee Feed">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                        </a>
+                        <div>
+                            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
+                                <h3 class="font-serif font-extrabold text-xl sm:text-2xl text-white">@soro_matrubhawan</h3>
+                                <span class="px-2.5 py-0.5 rounded-full bg-gold-500/20 border border-gold-400 text-gold-300 text-[11px] font-bold uppercase tracking-wider">
+                                    Official School Handle
+                                </span>
+                            </div>
+                            <p class="text-emerald-200 text-xs sm:text-sm font-medium mb-2">
+                                Centre of Sri Aurobindo Integral Education • Matrubhawan Soro (ESTD 2000)
+                            </p>
+                            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-gold-300">
+                                <span><strong class="text-white" id="igTotalPostsCount">9</strong> Featured Posts</span>
+                                <span>•</span>
+                                <span><strong class="text-white">2000–2026</strong> Batches</span>
+                                <span>•</span>
+                                <span><strong class="text-white">#MatrubhawanSoro25</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-center gap-3">
+                        <button onclick="toggleAddIgPostDrawer()" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-emerald-500/20 hover:bg-emerald-500/30 text-gold-300 border-2 border-gold-400 font-serif font-extrabold text-xs sm:text-sm shadow-lg transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-plus-circle text-gold-400 text-base"></i>
+                            <span>+ Add Post / Photo from Instagram</span>
+                        </button>
+                        <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-extrabold text-xs sm:text-sm shadow-lg hover:brightness-110 transition transform hover:-translate-y-0.5">
+                            <i class="fa-brands fa-instagram text-base"></i>
+                            <span>Follow @soro_matrubhawan</span>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61594806363972&utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-3 rounded-full bg-white/10 hover:bg-white/20 text-gold-200 border border-gold-400/50 font-serif font-bold text-xs sm:text-sm transition">
+                            <i class="fa-brands fa-facebook text-base text-gold-400"></i>
+                            <span class="hidden sm:inline">Facebook</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Drawer to Add Real Instagram Post URL or Upload Campus Photo -->
+                <div id="addIgPostDrawer" class="hidden mt-6 pt-6 border-t border-gold-400/30">
+                    <div class="bg-royalGreen-950/90 border border-gold-400/50 rounded-2xl p-5 sm:p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <h4 class="font-serif font-bold text-base sm:text-lg text-gold-300 flex items-center gap-2">
+                                    <i class="fa-brands fa-instagram text-gold-400"></i> Pin a Real @soro_matrubhawan Instagram Post or Upload Photo
+                                </h4>
+                                <p class="text-xs text-emerald-200/80">
+                                    Because Instagram blocks automatic scraping without login, you can paste any public Instagram Post/Reel URL (e.g., <code>https://www.instagram.com/p/XXXX/</code>) OR upload a photo downloaded from <strong>@soro_matrubhawan</strong> to display it right here!
+                                </p>
+                            </div>
+                            <button onclick="toggleAddIgPostDrawer()" class="text-gold-300 hover:text-white text-lg px-2">&times;</button>
+                        </div>
+
+                        <form onsubmit="handleAddCustomIgPost(event)" class="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+                            <div class="md:col-span-3">
+                                <label class="block text-[11px] uppercase tracking-wider text-gold-200 font-bold mb-1">1. Upload Photo (Optional)</label>
+                                <input id="newIgPhotoFile" type="file" accept="image/*" class="w-full text-xs text-emerald-200 file:mr-2 file:py-2 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-gold-500 file:text-royalGreen-950 hover:file:bg-gold-400 cursor-pointer bg-royalGreen-900/90 rounded-xl p-1.5 border border-gold-400/40">
+                            </div>
+                            <div class="md:col-span-3">
+                                <label class="block text-[11px] uppercase tracking-wider text-gold-200 font-bold mb-1">Or Instagram Post / Image URL</label>
+                                <input id="newIgUrl" type="url" placeholder="https://www.instagram.com/p/..." class="w-full px-3.5 py-2.5 rounded-xl bg-royalGreen-900 border border-gold-400/40 text-white text-xs focus:border-gold-300 outline-none">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-[11px] uppercase tracking-wider text-gold-200 font-bold mb-1">Category</label>
+                                <select id="newIgCategory" class="w-full px-3 py-2.5 rounded-xl bg-royalGreen-900 border border-gold-400/40 text-white text-xs focus:border-gold-300 outline-none">
+                                    <option value="Jubilee">Silver Jubilee</option>
+                                    <option value="Pranam">Pranam & Campus</option>
+                                    <option value="Culture">Puja & Sports</option>
+                                    <option value="Alumni">Batch Reunions</option>
+                                </select>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-[11px] uppercase tracking-wider text-gold-200 font-bold mb-1">Post Title / Caption *</label>
+                                <input id="newIgTitle" type="text" required placeholder="e.g., Saraswati Puja 2025" class="w-full px-3.5 py-2.5 rounded-xl bg-royalGreen-900 border border-gold-400/40 text-white text-xs focus:border-gold-300 outline-none">
+                            </div>
+                            <div class="md:col-span-2">
+                                <button type="submit" class="w-full py-2.5 px-4 rounded-xl bg-gold-gradient text-royalGreen-950 font-serif font-extrabold text-xs shadow-lg hover:brightness-110 transition">
+                                    📌 Pin to Feed
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Category Filter Pills -->
+                <div class="mt-6 pt-5 border-t border-gold-400/20 flex flex-wrap items-center justify-between gap-3">
+                    <div id="igCategoryButtons" class="flex flex-wrap items-center gap-2">
+                        <button onclick="filterIgGallery('ALL')" data-ig-cat="ALL" class="ig-cat-btn px-4 py-1.5 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-bold text-xs shadow transition">
+                            All Highlights
+                        </button>
+                        <button onclick="filterIgGallery('Jubilee')" data-ig-cat="Jubilee" class="ig-cat-btn px-4 py-1.5 rounded-full bg-white/10 text-gold-200 hover:bg-white/20 border border-gold-400/30 font-serif font-bold text-xs transition">
+                            Silver Jubilee
+                        </button>
+                        <button onclick="filterIgGallery('Pranam')" data-ig-cat="Pranam" class="ig-cat-btn px-4 py-1.5 rounded-full bg-white/10 text-gold-200 hover:bg-white/20 border border-gold-400/30 font-serif font-bold text-xs transition">
+                            Pranam & Campus
+                        </button>
+                        <button onclick="filterIgGallery('Culture')" data-ig-cat="Culture" class="ig-cat-btn px-4 py-1.5 rounded-full bg-white/10 text-gold-200 hover:bg-white/20 border border-gold-400/30 font-serif font-bold text-xs transition">
+                            Puja & Sports
+                        </button>
+                        <button onclick="filterIgGallery('Alumni')" data-ig-cat="Alumni" class="ig-cat-btn px-4 py-1.5 rounded-full bg-white/10 text-gold-200 hover:bg-white/20 border border-gold-400/30 font-serif font-bold text-xs transition">
+                            Batch Reunions
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-4">
+                        <button onclick="clearDemoIgPosts()" class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-200 hover:text-white underline decoration-amber-400 underline-offset-4">
+                            <i class="fa-solid fa-broom text-gold-400"></i>
+                            <span>Keep Only Real Pinned IG Links</span>
+                        </button>
+                        <button onclick="toggleLiveIgEmbed()" class="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-300 hover:text-white underline decoration-gold-400 underline-offset-4">
+                            <i class="fa-brands fa-instagram text-gold-400"></i>
+                            <span id="liveIgEmbedToggleText">Hide Official Instagram Profile Widget</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Official Instagram Profile Embed Frame (VISIBLE BY DEFAULT) -->
+                <div id="liveIgEmbedContainer" class="mt-5 pt-5 border-t border-gold-400/30">
+                    <div class="bg-white rounded-2xl overflow-hidden border-2 border-gold-400 shadow-inner">
+                        <div class="bg-royalGreen-950 px-4 py-3 flex flex-wrap items-center justify-between gap-2 text-xs text-gold-300">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                                <span><i class="fa-brands fa-instagram mr-1.5 text-gold-400"></i><strong>Live Official Instagram Feed (`@soro_matrubhawan`)</strong> — Directly embedded from Instagram</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <button onclick="toggleAddIgPostDrawer()" class="px-3 py-1 rounded-full bg-gold-500 text-royalGreen-950 font-bold hover:bg-gold-400 transition">
+                                    + Paste Individual Post/Reel Links
+                                </button>
+                                <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gold-300 font-bold underline">Open on Instagram ↗</a>
+                            </div>
+                        </div>
+                        <iframe src="https://www.instagram.com/soro_matrubhawan/embed" class="w-full h-[540px] border-0 bg-pearl" title="Matrubhawan Soro Official Instagram Feed" loading="lazy" allowtransparency="true"></iframe>
+                    </div>
+                    <p class="text-[11px] text-emerald-200/90 mt-2 text-center">
+                        💡 <strong>Why individual posts below need their link:</strong> Meta/Instagram security blocks AI & websites from automatically reading post URLs from `@soro_matrubhawan` without an API token. Click <strong>"+ Add Post / Photo from Instagram"</strong> above to paste any `instagram.com/p/...` or `instagram.com/reel/...` link, or send the links in chat and I will hardcode them for you!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Curated Instagram Feed Grid (Official Logo + Real Embedded Posts) -->
+            <div id="igGalleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Populated dynamically via JS -->
+            </div>
+
+            <!-- Bottom Callout to Open Full Feed -->
+            <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+                <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-royalGreen-900 hover:bg-royalGreen-950 text-gold-300 border-2 border-gold-400 font-serif font-bold text-xs sm:text-sm shadow-xl transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-instagram text-lg text-gold-400"></i>
+                    <span>View Full Feed & Reels on @soro_matrubhawan</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+                <button onclick="toggleAddIgPostDrawer()" class="inline-flex items-center gap-2 px-6 py-4 rounded-full bg-white hover:bg-gold-100 text-royalGreen-950 border-2 border-gold-500 font-serif font-bold text-xs sm:text-sm shadow-lg transition">
+                    <i class="fa-solid fa-camera-retro text-gold-700"></i>
+                    <span>+ Pin Another Instagram Post</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. INTERACTIVE 5-FOLD INTEGRAL EDUCATION PILLARS
+         ========================================== -->
+    <section id="pillars" class="py-20 bg-white relative border-b border-gold-400/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-4 py-1 rounded-full bg-gold-100 text-gold-900 border border-gold-400 font-serif font-bold text-xs uppercase tracking-widest mb-3">
+                    🪷 Purnanga Shiksha • ପୂର୍ଣ୍ଣାଙ୍ଗ ଶିକ୍ଷା 🪷
+                </span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-4xl text-royalGreen-950 mb-3">
+                    The Five Petals of <span class="text-gold-dark-gradient">Integral Education</span>
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Click on any of the 5 sacred dimensions below to see how Matrubhawan Soro nurtures the complete child in the light of Sri Aurobindo & The Mother.
+                </p>
+            </div>
+
+            <!-- 5 Interactive Pillar Cards -->
+            <div id="pillarsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-8">
+                <!-- Populated via JS -->
+            </div>
+
+            <!-- Active Pillar Detail Box -->
+            <div id="pillarDetailBox" class="max-w-4xl mx-auto rounded-3xl bg-royalGreen-900 text-white border-2 border-gold-400 p-6 sm:p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                <!-- Populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. TWO-DAY SILVER JUBILEE CELEBRATION SCHEDULE (DEC 28 & 29, 2026)
+         ========================================== -->
+    <section id="schedule" class="py-20 bg-pearl heritage-bg relative border-b border-gold-400/30">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-4 py-1 rounded-full bg-royalGreen-900 text-gold-300 border border-gold-400/40 font-serif font-bold text-xs uppercase tracking-widest mb-3">
+                    📅 ଉତ୍ସବ କାର୍ଯ୍ୟসূଚୀ • Grand Two-Day Itinerary
+                </span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-royalGreen-950 mb-3">
+                    Silver Jubilee <span class="text-gold-dark-gradient">Celebration Schedule</span>
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Two unforgettable days of collective Pranam, Guru Vandana, batch roll calls, cultural evenings, and sacred lamp lighting at Matrubhawan Soro.
+                </p>
+            </div>
+
+            <!-- Day Switcher Tabs & Print Button -->
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-8 bg-white p-4 rounded-2xl border-2 border-gold-400/50 shadow-md">
+                <div class="flex flex-wrap items-center gap-3">
+                    <button id="schedTab1" onclick="switchScheduleDay(1)" class="px-6 py-3 rounded-xl bg-royalGreen-900 text-gold-300 border-2 border-gold-400 font-serif font-bold text-xs sm:text-sm shadow-lg transition">
+                        🌅 Day 1: Dec 28, 2026 (Inauguration & Guru Vandana)
+                    </button>
+                    <button id="schedTab2" onclick="switchScheduleDay(2)" class="px-6 py-3 rounded-xl bg-royalGreen-50 text-royalGreen-900 hover:bg-royalGreen-100 border border-royalGreen-800/20 font-serif font-bold text-xs sm:text-sm transition">
+                        🕯️ Day 2: Dec 29, 2026 (Smruti Milan & 1,000 Lamps)
+                    </button>
+                </div>
+                <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-100 hover:bg-gold-300 text-royalGreen-950 border border-gold-500 text-xs font-bold transition">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print / Save Schedule</span>
+                </button>
+            </div>
+
+            <!-- Schedule Timeline List -->
+            <div id="scheduleTimelineContainer" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         6. SMRUTI PHALAKA: INTERACTIVE POLAROID MEMORY WALL
+         ========================================== -->
+    <section id="memory-wall" class="py-20 bg-white relative border-b border-gold-400/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-4 py-1 rounded-full bg-gold-100 text-gold-900 border border-gold-400 font-serif font-bold text-xs uppercase tracking-widest mb-3">
+                    📌 ସ୍ମୃତି ଫଳକ • Smruti Phalaka Memory Board
+                </span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-royalGreen-950 mb-3">
+                    Pin Your <span class="text-gold-dark-gradient">Childhood Polaroid Memory</span>
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base">
+                    Write your favourite classroom story, tiffin memory, or gratitude note for our revered Bhais & Apas to pin an instant vintage Polaroid card on our Jubilee board!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                <!-- Left Form: Pin a New Memory -->
+                <div class="lg:col-span-4 bg-royalGreen-950 text-white rounded-3xl p-6 sm:p-7 border-2 border-gold-400 shadow-2xl">
+                    <h3 class="font-serif font-bold text-xl text-gold-300 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-thumbtack text-gold-400"></i> Pin Your Memory Note
+                    </h3>
+                    <form onsubmit="addPolaroidMemory(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-1">Your Name *</label>
+                            <input id="memoryInputName" type="text" required maxlength="40" placeholder="e.g., Subham Das" class="w-full px-4 py-2.5 rounded-xl bg-royalGreen-900 border border-gold-400/50 text-white placeholder-emerald-200/50 text-sm focus:border-gold-300 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-1">Batch Year (2000–2026) *</label>
+                            <select id="memoryInputBatch" class="w-full px-4 py-2.5 rounded-xl bg-royalGreen-900 border border-gold-400/50 text-white text-sm focus:border-gold-300 outline-none">
+                                <!-- Populated via JS -->
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-1">Memory Tag</label>
+                            <select id="memoryInputTag" class="w-full px-4 py-2.5 rounded-xl bg-royalGreen-900 border border-gold-400/50 text-white text-sm focus:border-gold-300 outline-none">
+                                <option value="Morning Pranam 🪷">Morning Pranam 🪷</option>
+                                <option value="Bhai & Apa Blessings 🙏">Bhai & Apa Blessings 🙏</option>
+                                <option value="Tiffin Bell & Friends 🍱">Tiffin Bell & Friends 🍱</option>
+                                <option value="Sports & Saraswati Puja 🏅">Sports & Saraswati Puja 🏅</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-1">Your Nostalgic Memory *</label>
+                            <textarea id="memoryInputText" rows="3" required maxlength="180" placeholder="Share a moment from Matrubhawan Soro that you will never forget..." class="w-full px-4 py-2.5 rounded-xl bg-royalGreen-900 border border-gold-400/50 text-white placeholder-emerald-200/50 text-sm focus:border-gold-300 outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 px-5 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-extrabold text-xs sm:text-sm shadow-xl hover:brightness-110 transition transform active:scale-95">
+                            📌 Pin Polaroid to Smruti Phalaka
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Board: Filterable Polaroid Cards -->
+                <div class="lg:col-span-8">
+                    <!-- Batch Era Filter Buttons -->
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <button onclick="filterPolaroids('ALL')" data-pol-filter="ALL" class="pol-filter-btn px-4 py-1.5 rounded-full bg-royalGreen-900 text-gold-300 border border-gold-400 font-serif font-bold text-xs shadow transition">
+                                All Batches
+                            </button>
+                            <button onclick="filterPolaroids('2000-2008')" data-pol-filter="2000-2008" class="pol-filter-btn px-4 py-1.5 rounded-full bg-pearl text-royalGreen-900 hover:bg-royalGreen-100 border border-gold-400/50 font-serif font-bold text-xs transition">
+                                2000–2008 Era
+                            </button>
+                            <button onclick="filterPolaroids('2009-2016')" data-pol-filter="2009-2016" class="pol-filter-btn px-4 py-1.5 rounded-full bg-pearl text-royalGreen-900 hover:bg-royalGreen-100 border border-gold-400/50 font-serif font-bold text-xs transition">
+                                2009–2016 Era
+                            </button>
+                            <button onclick="filterPolaroids('2017-2026')" data-pol-filter="2017-2026" class="pol-filter-btn px-4 py-1.5 rounded-full bg-pearl text-royalGreen-900 hover:bg-royalGreen-100 border border-gold-400/50 font-serif font-bold text-xs transition">
+                                2017–2026 Era
+                            </button>
+                        </div>
+                        <span id="polaroidCountBadge" class="text-xs font-serif font-bold text-royalGreen-800 bg-gold-100 border border-gold-400 px-3 py-1 rounded-full">
+                            6 Memories Pinned
+                        </span>
+                    </div>
+
+                    <!-- Polaroid Grid -->
+                    <div id="polaroidGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Populated via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         7. INSTANT ALUMNI VIP PASS GENERATOR (WITH PHOTO UPLOAD & SILVER JUBILEE LOGO)
+         ========================================== -->
+    <section id="alumni-pass" class="py-20 bg-gradient-to-br from-royalGreen-950 via-royalGreen-900 to-royalGreen-800 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-block px-4 py-1 rounded-full bg-gold-500/20 text-gold-300 border border-gold-400/40 font-serif font-bold text-xs uppercase tracking-widest mb-3">
+                    🎓 ପୂରାତନ ଛାତ୍ରଛାତ୍ରୀ ପଞ୍ଜୀକରଣ • Alumni RSVP & Souvenir Badge
+                </span>
+                <h2 class="font-serif font-extrabold text-3xl sm:text-5xl text-white mb-3">
+                    Instant <span class="text-gold-gradient">Silver Jubilee VIP Pass Generator</span>
+                </h2>
+                <p class="text-emerald-100/80 text-base">
+                    Upload your photo, select your batch year, and click <strong>"Generate & Download PNG Pass"</strong> to save your official Silver Jubilee VIP card featuring the 25th Anniversary Emblem!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Left Column: Live Pass Customizer Form -->
+                <div class="lg:col-span-7 bg-white/10 backdrop-blur-md border border-gold-400/40 rounded-3xl p-6 sm:p-8 shadow-2xl">
+                    <h3 class="font-serif font-bold text-xl text-gold-300 mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-id-badge"></i> Customize Your Official Silver Jubilee VIP Pass
+                    </h3>
+                    <form id="passForm" onsubmit="handleDownloadPassPNG(event)" class="space-y-5">
+                        
+                        <!-- Photo Upload Box (Drag & Drop or Click) -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-2">
+                                1. Upload Your Portrait Photo (Appears on VIP Pass) *
+                            </label>
+                            <div id="photoDropZone" onclick="document.getElementById('passPhotoInput').click()" ondragover="handlePhotoDragOver(event)" ondragleave="handlePhotoDragLeave(event)" ondrop="handlePhotoDrop(event)" class="cursor-pointer rounded-2xl border-2 border-dashed border-gold-400/70 hover:border-gold-300 bg-royalGreen-950/70 hover:bg-royalGreen-950 p-4 transition flex flex-col sm:flex-row items-center justify-between gap-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-16 h-16 rounded-full border-2 border-gold-400 overflow-hidden bg-royalGreen-900 flex-shrink-0 shadow-md">
+                                        <img id="formPhotoThumb" src="" alt="Preview" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="text-left">
+                                        <span class="text-sm font-serif font-bold text-gold-300 block">Click to Upload or Drag & Drop Photo</span>
+                                        <span class="text-xs text-emerald-200/80 block">Supports JPG, PNG, WEBP • Automatically framed in a Royal Gold Circle</span>
+                                    </div>
+                                </div>
+                                <span class="px-4 py-2 rounded-full bg-gold-500/20 border border-gold-400 text-gold-300 text-xs font-bold whitespace-nowrap">
+                                    <i class="fa-solid fa-camera mr-1"></i> Choose Photo
+                                </span>
+                                <input id="passPhotoInput" type="file" accept="image/*" onchange="handlePassPhotoUpload(event)" class="hidden">
+                            </div>
+                        </div>
+
+                        <!-- Full Name & Batch Year -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-1">2. Full Name *</label>
+                                <input id="passName" type="text" oninput="updateLivePass()" value="Ananya Mohanty" required placeholder="Your Full Name" class="w-full px-4 py-3 rounded-xl bg-royalGreen-950/90 border border-gold-400/50 text-white focus:border-gold-300 outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-1">3. Batch Year (2000–2026) *</label>
+                                <select id="passBatch" onchange="updateLivePass()" class="w-full px-4 py-3 rounded-xl bg-royalGreen-950/90 border border-gold-400/50 text-white focus:border-gold-300 outline-none text-sm">
+                                    <!-- Populated via JS -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Attendee Role -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gold-200 font-bold mb-1">4. Attendee Role / Category *</label>
+                            <select id="passRole" onchange="updateLivePass()" class="w-full px-4 py-3 rounded-xl bg-royalGreen-950/90 border border-gold-400/50 text-white focus:border-gold-300 outline-none text-sm">
+                                <option value="Alumni / Former Student">🎓 Alumni / Former Student</option>
+                                <option value="Revered Bhai / Apa (Teacher)">🙏 Revered Bhai / Apa (Teacher)</option>
+                                <option value="Current Student">📘 Current Student</option>
+                                <option value="Parent / Guest of Honour">🌟 Parent / Guest of Honour</option>
+                            </select>
+                        </div>
+
+                        <!-- Action Buttons: Download PNG, Print, Share on WhatsApp -->
+                        <div class="pt-3 flex flex-wrap items-center gap-3">
+                            <button id="downloadPngPassBtn" type="submit" class="px-6 py-3.5 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-extrabold text-xs sm:text-sm shadow-xl hover:brightness-110 transition transform active:scale-95 flex items-center gap-2">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Generate & Download PNG Pass</span>
+                            </button>
+
+                            <button id="printPassBtn" type="button" onclick="window.print()" class="px-5 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-gold-300 border border-gold-400/40 text-xs sm:text-sm font-semibold transition flex items-center gap-2">
+                                <i class="fa-solid fa-print"></i>
+                                <span>Print Pass</span>
+                            </button>
+
+                            <button id="whatsappShareBtn" type="button" onclick="sharePassOnWhatsApp()" class="px-5 py-3.5 rounded-full bg-[#25D366]/20 hover:bg-[#25D366] text-white border border-[#25D366] text-xs sm:text-sm font-bold transition flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span>Share on WhatsApp</span>
+                            </button>
+                        </div>
+
+                        <p id="rsvpSuccessBanner" class="hidden mt-4 p-3.5 rounded-xl bg-emerald-500/20 border border-emerald-400 text-emerald-100 text-xs sm:text-sm font-medium">
+                            ✅ High-Resolution Souvenir PNG Pass downloaded (`Matrubhawan-Soro-VIP-Pass.png`)! Share it on Instagram and tag <strong>@soro_matrubhawan</strong>!
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Right Column: Live Golden VIP Pass Card Preview -->
+                <div class="lg:col-span-5 flex flex-col items-center">
+                    <div id="vipCardPreview" class="w-full max-w-sm rounded-3xl bg-gradient-to-b from-royalGreen-950 via-royalGreen-900 to-royalGreen-950 border-4 border-gold-400 shadow-2xl overflow-hidden relative p-6 text-center animate-pulse-gold">
+                        <!-- Top Lanyard Slot -->
+                        <div class="w-16 h-2.5 bg-gold-400/30 border border-gold-400 rounded-full mx-auto mb-4"></div>
+
+                        <!-- Prominent Silver Jubilee Logo + School Header -->
+                        <div class="flex flex-col items-center justify-center mb-4">
+                            <div class="w-20 h-20 rounded-full p-1 bg-gold-gradient shadow-lg mb-2">
+                                <img id="vipPassLogoImg" src="logo_t.jpg" alt="Silver Jubilee Logo" class="w-full h-full rounded-full object-contain bg-black" onerror="this.onerror=null; this.src=FALLBACK_LOGO_SVG;">
+                            </div>
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-gold-300 font-bold block">★ Silver Jubilee • 2000–2025/26 ★</span>
+                            <h4 class="font-serif font-extrabold text-sm sm:text-base text-white leading-tight mt-0.5">CENTRE OF SRI AUROBINDO INTEGRAL EDUCATION</h4>
+                            <span class="text-xs font-serif font-bold text-gold-400 tracking-widest block">• MATRUBHAWAN SORO •</span>
+                        </div>
+
+                        <div class="bg-gold-gradient text-royalGreen-950 font-serif font-black text-xs uppercase tracking-[0.18em] py-1.5 rounded-lg mb-4 shadow">
+                            ★ ALUMNI HOMECOMING VIP PASS ★
+                        </div>
+
+                        <!-- Uploaded Attendee Portrait & Details -->
+                        <div class="bg-white/95 text-royalGreen-950 rounded-2xl p-5 shadow-inner mb-4 relative">
+                            <!-- Circular Royal Gold Framed User Photo -->
+                            <div class="w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-gold-700 via-gold-400 to-gold-300 shadow-xl mx-auto mb-3">
+                                <img id="cardPreviewPhoto" src="" alt="Attendee Photo" class="w-full h-full object-cover rounded-full bg-royalGreen-950">
+                            </div>
+
+                            <span id="cardPreviewBatch" class="inline-block px-4 py-0.5 rounded-full bg-royalGreen-900 text-gold-300 font-serif font-bold text-xs mb-2 shadow">
+                                Batch of 2012
+                            </span>
+
+                            <h3 id="cardPreviewName" class="font-serif font-black text-2xl text-royalGreen-950 break-words leading-tight">
+                                Ananya Mohanty
+                            </h3>
+
+                            <p id="cardPreviewRole" class="text-xs text-royalGreen-700 font-bold mt-1.5 uppercase tracking-wider">
+                                🎓 Alumni / Former Student
+                            </p>
+                        </div>
+
+                        <!-- Pass Footer & Simulated QR -->
+                        <div class="flex items-center justify-between text-left px-2 pt-1 border-t border-gold-400/20">
+                            <div>
+                                <span class="text-[10px] text-gold-300 uppercase block">Pass ID: <strong id="cardPreviewId" class="text-white">#MBS-25-2012</strong></span>
+                                <span class="text-[10px] text-emerald-200 block">📅 Dec 28 & 29, 2026</span>
+                                <span class="text-[10px] text-gold-400 font-semibold block">📍 Matrubhawan Soro Campus</span>
+                            </div>
+                            <div class="w-12 h-12 rounded-lg bg-white p-1.5 flex items-center justify-center text-royalGreen-950 text-2xl shadow">
+                                <i class="fa-solid fa-qrcode"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden High-Res HTML5 Canvas for PNG Pass Rendering -->
+                    <canvas id="vipPassCanvas" width="800" height="1140" class="hidden"></canvas>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         8. SOCIAL CONNECT & FOOTER
+         ========================================== -->
+    <footer class="bg-royalGreen-950 text-white border-t-4 border-gold-500 pt-16 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Social Media Spotlight Banner -->
+            <div class="rounded-3xl bg-gradient-to-r from-royalGreen-900 via-royalGreen-800 to-royalGreen-900 border-2 border-gold-400/50 p-6 sm:p-10 mb-14 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="text-center lg:text-left max-w-xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-400 block mb-2">📲 Stay Connected With Your Alma Mater</span>
+                    <h3 class="font-serif font-extrabold text-2xl sm:text-3xl text-white mb-2">
+                        Follow Official Silver Jubilee Updates & Reels
+                    </h3>
+                    <p class="text-emerald-100/80 text-sm">
+                        Join thousands of Matrubhawan Soro students, alumni, and teachers on our official Instagram and Facebook pages for daily throwback photos and countdown videos!
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-pink-600 to-purple-700 text-white font-bold text-sm shadow-xl hover:scale-105 transition">
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                        <div class="text-left">
+                            <span class="block text-[10px] uppercase tracking-wider opacity-90">Follow on Instagram</span>
+                            <span class="font-serif text-base">@soro_matrubhawan</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61594806363972&utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-[#1877F2] text-white font-bold text-sm shadow-xl hover:scale-105 transition">
+                        <i class="fa-brands fa-facebook text-2xl"></i>
+                        <div class="text-left">
+                            <span class="block text-[10px] uppercase tracking-wider opacity-90">Connect on Facebook</span>
+                            <span class="font-serif text-base">Matrubhawan Soro</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Footer Columns -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-gold-500/20">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="logo_t.jpg" alt="Matrubhawan Soro Logo" class="w-12 h-12 rounded-full border border-gold-400 bg-black" onerror="this.onerror=null; this.src=FALLBACK_LOGO_SVG;">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg text-gold-300">MATRUBHAWAN SORO</h4>
+                            <p class="text-xs text-emerald-200/80">Centre of Sri Aurobindo Integral Education</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-emerald-100/70 leading-relaxed mb-4">
+                        Established in 2000 at Soro, Balasore, Odisha. Dedicated to the ideals of Sri Aurobindo and The Mother—Nurturing Individuals, Building Tomorrow.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-bold text-sm uppercase tracking-wider text-gold-400 mb-4">Quick Nostalgia Links</h4>
+                    <ul class="space-y-2 text-xs text-emerald-100/80">
+                        <li><a href="#nostalgia" class="hover:text-gold-300 transition">• Do You Remember? (Childhood Moments)</a></li>
+                        <li><a href="#journey" class="hover:text-gold-300 transition">• 25-Year Milestone Journey (2000–2025/26)</a></li>
+                        <li><a href="#ig-gallery" class="hover:text-gold-300 transition">• Instagram Photo Gallery (@soro_matrubhawan)</a></li>
+                        <li><a href="#memory-wall" class="hover:text-gold-300 transition">• Smruti Phalaka (Pin Your Polaroid)</a></li>
+                        <li><a href="#alumni-pass" class="hover:text-gold-300 transition">• Download Alumni VIP Pass (.PNG)</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-bold text-sm uppercase tracking-wider text-gold-400 mb-4">Campus Address</h4>
+                    <p class="text-xs text-emerald-100/80 leading-relaxed">
+                        <i class="fa-solid fa-location-dot text-gold-400 mr-1.5"></i>
+                        <strong>Centre of Sri Aurobindo Integral Education (Matrubhawan)</strong><br>
+                        Soro, District: Balasore, Odisha, India
+                    </p>
+                    <div class="mt-4 p-3 rounded-xl bg-white/5 border border-gold-400/20 text-xs text-gold-200 font-hand text-xl">
+                        "ଅତୀତର ସ୍ମୃତି, ବର୍ତ୍ତମାନର ଉତ୍ସବ, ଭବିଷ୍ୟତର ଆଲୋକ"
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-emerald-200/60 gap-4">
+                <p>© 2000–2026 Centre of Sri Aurobindo Integral Education, Matrubhawan Soro. All Rights Reserved.</p>
+                <p>Crafted with ❤️ & Nostalgia for the Silver Jubilee Celebration</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         9. INSTAGRAM LIGHTBOX MODAL VIEWER
+         ========================================== -->
+    <div id="igLightboxModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4" onclick="if(event.target === this) closeIgLightbox()">
+        <div class="bg-white text-royalGreen-950 rounded-3xl max-w-4xl w-full border-4 border-gold-400 shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12">
+            <!-- Left Image Area -->
+            <div class="md:col-span-7 bg-royalGreen-950 flex items-center justify-center relative min-h-[280px] sm:min-h-[420px]">
+                <img id="lightboxImg" src="" alt="Instagram Post" class="w-full h-full max-h-[500px] object-contain">
+            </div>
+            <!-- Right Instagram Details Area -->
+            <div class="md:col-span-5 p-6 flex flex-col justify-between bg-pearl">
+                <div>
+                    <div class="flex items-center justify-between pb-4 border-b border-gold-400/30 mb-4">
+                        <div class="flex items-center gap-2.5">
+                            <img src="logo_t.jpg" alt="Logo" class="w-10 h-10 rounded-full border border-gold-500 bg-black object-cover" onerror="this.onerror=null; this.src=FALLBACK_LOGO_SVG;">
+                            <div>
+                                <h4 class="font-serif font-bold text-sm text-royalGreen-950">@soro_matrubhawan</h4>
+                                <span id="lightboxCategory" class="text-[11px] text-gold-700 font-semibold block">Matrubhawan Soro</span>
+                            </div>
+                        </div>
+                        <button onclick="closeIgLightbox()" class="w-8 h-8 rounded-full bg-royalGreen-100 hover:bg-royalGreen-900 text-royalGreen-900 hover:text-gold-300 flex items-center justify-center text-lg font-bold transition">&times;</button>
+                    </div>
+                    <h3 id="lightboxTitle" class="font-serif font-extrabold text-xl text-royalGreen-950 mb-2"></h3>
+                    <p id="lightboxCaption" class="text-sm text-gray-700 leading-relaxed mb-4"></p>
+                    <p class="text-xs font-semibold text-royalGreen-700">#MatrubhawanSoro #SilverJubilee25 #IntegralEducation #Soro</p>
+                </div>
+
+                <div class="pt-4 border-t border-gold-400/30 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <button id="lightboxLikeBtn" onclick="likeActiveLightboxPost()" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-royalGreen-50 hover:bg-royalGreen-900 text-royalGreen-900 hover:text-gold-300 border border-gold-400 text-xs font-bold transition">
+                            <i class="fa-solid fa-heart text-red-500"></i>
+                            <span id="lightboxLikesCount">245 Likes</span>
+                        </button>
+                        <span id="lightboxDate" class="text-xs text-gray-500 font-medium"></span>
+                    </div>
+                    <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-4 rounded-xl bg-gold-gradient text-royalGreen-950 font-serif font-extrabold text-xs flex items-center justify-center gap-2 shadow hover:brightness-105 transition">
+                        <i class="fa-brands fa-instagram text-base"></i>
+                        <span>View on @soro_matrubhawan Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MAIN APPLICATION JAVASCRIPT
+         ========================================== -->
+    <script>
+        // ==========================================
+        // 0. NON-BLOCKING TOAST NOTIFICATION HELPER
+        // ==========================================
+        function showToast(message, icon = 'fa-bell') {
+            const container = document.getElementById('toastContainer');
+            if (!container) return;
+            const toast = document.createElement('div');
+            toast.className = 'pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-2xl bg-royalGreen-950/95 text-gold-300 border-2 border-gold-400 shadow-2xl text-xs sm:text-sm font-medium transition-all duration-300 transform translate-y-0 opacity-100';
+            toast.innerHTML = `
+                <i class="fa-solid ${icon} text-gold-400 text-base"></i>
+                <span class="flex-1 text-white">${message}</span>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(-10px)';
+                setTimeout(() => toast.remove(), 300);
+            }, 3400);
+        }
+
+        // ==========================================
+        // 1. WEB AUDIO API: SCHOOL BELL & MEDITATION FLUTE
+        // ==========================================
+        let bellRingsCount = parseInt(localStorage.getItem('mbs_bell_count') || '250', 10);
+        let audioCtx = null;
+        let meditationOscillators = [];
+        let meditationGain = null;
+        let isMeditationPlaying = false;
+
+        function getAudioContext() {
+            if (!audioCtx) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                if (AudioContextClass) {
+                    audioCtx = new AudioContextClass();
+                }
+            }
+            if (audioCtx && audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            return audioCtx;
+        }
+
+        function ringSchoolBell(silentToast = false) {
+            try {
+                const ctxAudio = getAudioContext();
+                if (ctxAudio) {
+                    const now = ctxAudio.currentTime;
+                    strikeBellNote(ctxAudio, now, 880, 1.45);
+                    strikeBellNote(ctxAudio, now + 0.32, 880, 1.85);
+                }
+            } catch (e) {
+                console.warn('Web Audio bell skipped:', e);
+            }
+
+            bellRingsCount++;
+            localStorage.setItem('mbs_bell_count', String(bellRingsCount));
+            const badge = document.getElementById('bellCounterBadge');
+            if (badge) badge.textContent = bellRingsCount;
+
+            const bellIcon = document.getElementById('bellIcon');
+            if (bellIcon) {
+                bellIcon.classList.remove('animate-bell-ring');
+                void bellIcon.offsetWidth;
+                bellIcon.classList.add('animate-bell-ring');
+            }
+
+            launchGoldConfetti();
+            if (!silentToast) {
+                showToast(`🔔 ଟଣା ଟଣା! Matrubhawan School Bell Rung! (#${bellRingsCount})`, 'fa-bell');
+            }
+            return true;
+        }
+
+        function strikeBellNote(ctxAudio, startTime, baseFreq, duration) {
+            const partials = [1, 2.0, 2.42, 3.0, 4.15];
+            const gains = [0.32, 0.18, 0.14, 0.09, 0.05];
+
+            partials.forEach((ratio, idx) => {
+                const osc = ctxAudio.createOscillator();
+                const gainNode = ctxAudio.createGain();
+                osc.type = idx % 2 === 0 ? 'sine' : 'triangle';
+                osc.frequency.setValueAtTime(baseFreq * ratio, startTime);
+
+                gainNode.gain.setValueAtTime(0.001, startTime);
+                gainNode.gain.linearRampToValueAtTime(gains[idx], startTime + 0.015);
+                gainNode.gain.exponentialRampToValueAtTime(0.0001, startTime + duration / (idx * 0.45 + 1));
+
+                osc.connect(gainNode);
+                gainNode.connect(ctxAudio.destination);
+
+                osc.start(startTime);
+                osc.stop(startTime + duration);
+            });
+        }
+
+        function toggleMeditationAmbience() {
+            const label = document.getElementById('meditationLabel');
+            const btn = document.getElementById('meditationToggleBtn');
+
+            if (!isMeditationPlaying) {
+                try {
+                    const ctxAudio = getAudioContext();
+                    if (ctxAudio) {
+                        meditationGain = ctxAudio.createGain();
+                        meditationGain.gain.setValueAtTime(0.001, ctxAudio.currentTime);
+                        meditationGain.gain.linearRampToValueAtTime(0.08, ctxAudio.currentTime + 1.2);
+                        meditationGain.connect(ctxAudio.destination);
+
+                        // Peaceful Sa-Pa-Sa harmonic meditation chord (432Hz root)
+                        const freqs = [216, 324, 432, 540];
+                        meditationOscillators = freqs.map((f, i) => {
+                            const osc = ctxAudio.createOscillator();
+                            osc.type = i % 2 === 0 ? 'sine' : 'triangle';
+                            osc.frequency.setValueAtTime(f, ctxAudio.currentTime);
+                            osc.connect(meditationGain);
+                            osc.start();
+                            return osc;
+                        });
+                    }
+                } catch (e) {
+                    console.warn('Meditation audio skipped:', e);
+                }
+                isMeditationPlaying = true;
+                if (label) label.textContent = 'Pranam Flute: On 🪷';
+                if (btn) btn.classList.add('bg-gold-500/20', 'border-gold-400');
+                showToast('🪷 Peaceful Morning Pranam Ambience Activated', 'fa-spa');
+            } else {
+                try {
+                    meditationOscillators.forEach(osc => {
+                        try { osc.stop(); } catch (err) {}
+                    });
+                    meditationOscillators = [];
+                } catch (e) {}
+                isMeditationPlaying = false;
+                if (label) label.textContent = 'Pranam Flute: Off';
+                if (btn) btn.classList.remove('bg-gold-500/20', 'border-gold-400');
+                showToast('Morning Pranam Ambience Paused', 'fa-volume-xmark');
+            }
+            return isMeditationPlaying;
+        }
+
+        // ==========================================
+        // 2. GOLDEN CONFETTI & HEART PARTICLE ENGINE
+        // ==========================================
+        const canvas = document.getElementById('confettiCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function launchGoldConfetti(originX, originY) {
+            const colors = ['#D4AF37', '#F3E5AB', '#15803D', '#FFFFFF', '#AA7C11'];
+            const startX = originX || window.innerWidth / 2;
+            const startY = originY || window.innerHeight * 0.35;
+
+            for (let i = 0; i < 55; i++) {
+                particles.push({
+                    x: startX + (Math.random() - 0.5) * 200,
+                    y: startY,
+                    vx: (Math.random() - 0.5) * 11,
+                    vy: (Math.random() - 1) * 11 - 3,
+                    size: Math.random() * 7 + 4,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    rotation: Math.random() * 360,
+                    vRot: (Math.random() - 0.5) * 10,
+                    alpha: 1
+                });
+            }
+            if (particles.length <= 55) {
+                requestAnimationFrame(updateConfetti);
+            }
+        }
+
+        function updateConfetti() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p) => {
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.25;
+                p.rotation += p.vRot;
+                p.alpha -= 0.014;
+
+                ctx.save();
+                ctx.globalAlpha = Math.max(0, p.alpha);
+                ctx.translate(p.x, p.y);
+                ctx.rotate((p.rotation * Math.PI) / 180);
+                ctx.fillStyle = p.color;
+                ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
+                ctx.restore();
+            });
+            particles = particles.filter(p => p.alpha > 0);
+            if (particles.length > 0) {
+                requestAnimationFrame(updateConfetti);
+            }
+        }
+
+        // ==========================================
+        // 3. "DO YOU REMEMBER?" NOSTALGIA CARDS & CHALKBOARD
+        // ==========================================
+        const nostalgiaMoments = [
+            {
+                id: 'pranam',
+                icon: 'fa-hands-praying',
+                odiaTitle: 'ସକାଳର ସମୂହ ପ୍ରଣାମ ଓ ଧ୍ୟାନ',
+                title: 'Morning Pranam & Silent Meditation',
+                desc: 'Standing in neat rows in the serene courtyard, closing our eyes in collective silence, and beginning the day in The Mother’s grace.',
+                batchQuote: '"That 10-minute morning silence still calms me during tough days at work."',
+                hearts: 342,
+                liked: false
+            },
+            {
+                id: 'bhaiapa',
+                icon: 'fa-chalkboard-user',
+                odiaTitle: 'ଭାଇ ଓ ଅପାଙ୍କ ସ୍ନେହଭରା ଶାସନ',
+                title: 'Calling Our Teachers "Bhai" & "Apa"',
+                desc: 'At Matrubhawan, teachers were never distant figures—they were our elder brothers (Bhai) and sisters (Apa) who guided us with love.',
+                batchQuote: '"Calling teachers Bhai & Apa made school feel like an extended family."',
+                hearts: 512,
+                liked: false
+            },
+            {
+                id: 'tiffin',
+                icon: 'fa-bowl-rice',
+                odiaTitle: 'ଟିଫିନ୍ ଘଣ୍ଟି ଓ ସାଙ୍ଗମାନଙ୍କ ସହ ଭୋଜନ',
+                title: 'Tiffin Box Sharing Under the Trees',
+                desc: 'The moment the brass bell rang for recess! Sitting in circles under the campus trees, sharing home-cooked Mudhi, Bara, Chakuli & Maggi.',
+                batchQuote: '"Nobody ever ate alone at Matrubhawan—one tiffin was shared by six hands!"',
+                hearts: 418,
+                liked: false
+            },
+            {
+                id: 'saraswati',
+                icon: 'fa-dharmachakra',
+                odiaTitle: 'ସରସ୍ୱତୀ ପୂଜା ଓ ଗଣେଶ ପୂଜା ପୁଷ୍ପାଞ୍ଜଳି',
+                title: 'Saraswati Puja & Ganesh Puja Pushpanjali',
+                desc: 'Decorating the campus with marigold garlands, wearing festive clothes, offering Pushpanjali on empty stomachs, and waiting for Prasad!',
+                batchQuote: '"Waiting all morning just for the Khichdi & Labra prasad with classmates!"',
+                hearts: 389,
+                liked: false
+            },
+            {
+                id: 'sports',
+                icon: 'fa-medal',
+                odiaTitle: 'ବାର୍ଷିକ କ୍ରୀଡ଼ା ଓ ସନ୍ଧ୍ୟା ଖେଳ',
+                title: 'Annual Sports Day & March Past',
+                desc: 'March-past drums echoing across Soro, lime-powder tracks on the ground, relay batons, and cheering our lungs out for our friends.',
+                batchQuote: '"Winning a ribbon from Bhai’s hand felt bigger than an Olympic gold medal!"',
+                hearts: 295,
+                liked: false
+            },
+            {
+                id: 'rainydays',
+                icon: 'fa-cloud-showers-heavy',
+                odiaTitle: 'ବର୍ଷା ଦିନ ଓ କାଗଜ ଡଙ୍ଗା',
+                title: 'Monsoon Verandas & Paper Boats',
+                desc: 'Watching heavy Soro monsoon rains drench the garden, bicycles lined up in the shed, and floating paper boats across puddles after class.',
+                batchQuote: '"The smell of wet earth in the Matrubhawan campus is pure childhood magic."',
+                hearts: 364,
+                liked: false
+            }
+        ];
+
+        function loadNostalgiaState() {
+            try {
+                const saved = JSON.parse(localStorage.getItem('mbs_nostalgia_state') || 'null');
+                if (saved && Array.isArray(saved)) {
+                    saved.forEach((s, i) => {
+                        if (nostalgiaMoments[i]) {
+                            nostalgiaMoments[i].hearts = s.hearts ?? nostalgiaMoments[i].hearts;
+                            nostalgiaMoments[i].liked = !!s.liked;
+                        }
+                    });
+                }
+            } catch (e) {}
+        }
+
+        function saveNostalgiaState() {
+            try {
+                localStorage.setItem('mbs_nostalgia_state', JSON.stringify(
+                    nostalgiaMoments.map(m => ({ id: m.id, hearts: m.hearts, liked: m.liked }))
+                ));
+            } catch (e) {}
+        }
+
+        function renderNostalgiaCards() {
+            const grid = document.getElementById('nostalgiaGrid');
+            if (!grid) return;
+            grid.innerHTML = nostalgiaMoments.map((item, idx) => `
+                <div class="bg-white rounded-3xl border-2 ${item.liked ? 'border-gold-500 ring-2 ring-gold-300' : 'border-gold-400/50'} shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between p-6 sm:p-7 group hover:-translate-y-1.5">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-royalGreen-800 bg-royalGreen-50 border border-royalGreen-700/20 px-3 py-1 rounded-full">
+                                ${item.odiaTitle}
+                            </span>
+                            <div class="w-11 h-11 rounded-2xl bg-royalGreen-900 text-gold-400 flex items-center justify-center text-lg group-hover:scale-110 transition">
+                                <i class="fa-solid ${item.icon}"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-royalGreen-950 mb-2 group-hover:text-royalGreen-700 transition">
+                            ${item.title}
+                        </h3>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                            ${item.desc}
+                        </p>
+                    </div>
+                    <div>
+                        <div class="bg-gold-100/70 border-l-4 border-gold-500 p-3 rounded-r-xl mb-5">
+                            <p class="font-hand text-xl text-royalGreen-900 leading-snug">${item.batchQuote}</p>
+                        </div>
+                        <button onclick="likeNostalgiaMoment(${idx})" id="likeBtn-${idx}" class="w-full py-2.5 px-4 rounded-xl ${item.liked ? 'bg-royalGreen-900 text-gold-300' : 'bg-royalGreen-50 hover:bg-royalGreen-900 text-royalGreen-900 hover:text-gold-300'} border border-royalGreen-800/20 font-semibold text-xs sm:text-sm flex items-center justify-between transition">
+                            <span><i class="fa-solid fa-heart text-red-500 mr-1.5"></i> ${item.liked ? 'You Miss This! ❤️' : 'I Miss This! ❤️'}</span>
+                            <span id="heartCount-${idx}" class="font-serif font-bold bg-white text-royalGreen-950 px-2.5 py-0.5 rounded-full shadow-sm">${item.hearts}</span>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function likeNostalgiaMoment(idx) {
+            const item = nostalgiaMoments[idx];
+            if (!item) return;
+            if (!item.liked) {
+                item.hearts++;
+                item.liked = true;
+                showToast(`❤️ Added heart to "${item.title}"!`, 'fa-heart');
+            } else {
+                item.hearts++;
+            }
+            saveNostalgiaState();
+            renderNostalgiaCards();
+            launchGoldConfetti();
+        }
+
+        // Chalkboard Quotes & Custom Chalk Writer
+        const chalkQuotes = [
+            {
+                text: '"Silence is the language of the Soul. Remember how we sat together in morning meditation before the first lesson began?"',
+                author: '— Morning Assembly Memory, Matrubhawan Soro'
+            },
+            {
+                text: '"Do you remember cleaning the blackboard for Bhai & Apa and feeling like the proudest monitor in the whole school?"',
+                author: '— Classroom Monitor Nostalgia, Batch of 2008'
+            },
+            {
+                text: '"The last bell at 4:00 PM, running to the cycle stand, and promising friends we would finish homework tomorrow!"',
+                author: '— Evening Bell Memory, Batch of 2015'
+            },
+            {
+                text: '"True education is not pumping knowledge from outside, but uncovering the light already hidden within the child."',
+                author: '— Inspired by Sri Aurobindo & The Mother'
+            }
+        ];
+        let chalkIndex = 0;
+
+        function cycleChalkboardMemory() {
+            const board = document.getElementById('chalkBoardContent');
+            if (!board) return;
+            board.classList.add('chalk-erasing');
+            setTimeout(() => {
+                chalkIndex = (chalkIndex + 1) % chalkQuotes.length;
+                document.getElementById('chalkQuoteText').textContent = chalkQuotes[chalkIndex].text;
+                document.getElementById('chalkQuoteAuthor').textContent = chalkQuotes[chalkIndex].author;
+                board.classList.remove('chalk-erasing');
+            }, 260);
+        }
+
+        function writeCustomChalkMessage(e) {
+            if (e) e.preventDefault();
+            const input = document.getElementById('customChalkInput');
+            const val = input ? input.value.trim() : '';
+            if (!val) return;
+
+            chalkQuotes.push({
+                text: `"${val}"`,
+                author: '— Written on the Jubilee Chalkboard by a Proud Student'
+            });
+            chalkIndex = chalkQuotes.length - 2;
+            cycleChalkboardMemory();
+            input.value = '';
+            showToast('✍️ Your chalk note is now written on the blackboard!', 'fa-chalkboard');
+        }
+
+        // ==========================================
+        // 4. INTERACTIVE 25-YEAR MILESTONE EXPLORER
+        // ==========================================
+        const milestonesData = [
+            {
+                id: '2000',
+                yearLabel: '2000 • Foundation',
+                title: 'The Sacred Seed Planted in Soro (ESTD 2000)',
+                odiaSub: '୨୦୦୦ ମସିହା: ମାତୃଭବନ ସୋରର ପବିତ୍ର ଶୁଭାରମ୍ଭ',
+                desc: 'Inspired by the Integral Education philosophy of Sri Aurobindo and The Mother, Matrubhawan Soro began its sacred journey in the year 2000 with dedicated founding Bhais, Apas, and pioneer students.',
+                quote: '"A small peaceful courtyard, boundless devotion, and the Mother’s light guiding every brick."',
+                highlights: ['Inaugural Morning Pranam Assembly', 'Pioneer Batch of 2000 Enrolled', 'Founding Bhais & Apas Dedication']
+            },
+            {
+                id: '2005',
+                yearLabel: '2005 • Campus Growth',
+                title: 'Blossoming Classrooms, Gardens & Sports Ground',
+                odiaSub: '୨୦୦୫–୨୦୧୦: ବିଦ୍ୟାଳୟ ପରିସରର ବିକାଶ ଓ କ୍ରୀଡ଼ା ଉତ୍ସବ',
+                desc: 'With growing trust from families across Soro and Balasore, the campus expanded with vibrant classrooms, flower gardens tended by students, and annual physical education demonstrations.',
+                quote: '"Every plant in the garden knew our names, and every Sports Day felt like a grand festival."',
+                highlights: ['Expansion of Primary & Upper Primary Wings', 'Annual Sports Meet & March Past Tradition', 'Saraswati Puja & Sanskrit Shloka Recitals']
+            },
+            {
+                id: '2012',
+                yearLabel: '2012 • Holistic Excellence',
+                title: 'District & State Recognition in Academics & Culture',
+                odiaSub: '୨୦୧୨–୨୦୧୮: ଶିକ୍ଷା, ସଂସ୍କୃତି ଓ ନୈତିକ ମୂଲ୍ୟବୋଧର ପ୍ରସାର',
+                desc: 'Students of Matrubhawan Soro shone brightly in state scholarships, debate competitions, Odissi dance, science exhibitions, and yoga championships while staying humble and grounded.',
+                quote: '"Not just textbook marks, but learning how to concentrate, create, and care for society."',
+                highlights: ['District-Level Science & Art Exhibitions', '100% Holistic Character Development', 'Hundreds of Alumni Excelling Across India']
+            },
+            {
+                id: '2020',
+                yearLabel: '2020 • Resilience & Care',
+                title: 'Standing Together Through Challenging Times',
+                odiaSub: '୨୦୨୦: ଆହ୍ୱାନ ମଧ୍ୟରେ ଆତ୍ମവിଶ୍ୱାସ ଓ ଏକତା',
+                desc: 'Even during global disruptions, our Bhais and Apas stayed connected with every student’s family, ensuring uninterrupted learning, inner strength, and emotional wellbeing.',
+                quote: '"Distance could never separate hearts bound by The Mother’s prayers."',
+                highlights: ['Community Support & Student Care', 'Digital & Guided Home Learning', 'Strengthened Alumni Brotherhood']
+            },
+            {
+                id: '2026',
+                yearLabel: '2025/26 • Silver Jubilee',
+                title: '25 Glorious Years — Grand Silver Jubilee Homecoming',
+                odiaSub: '୨୦୨୫–୨୬: ରୌପ୍ୟ ଜୟନ୍ତୀ ମହୋତ୍ସବ ଓ ପୂରାତନ ଛାତ୍ର ସମାବେଶ',
+                desc: 'On December 28 & 29, 2026, all 25 batches reunite at Matrubhawan Soro to bow in gratitude to our founding Gurus, ring the old school bell, and light 1,000 golden lamps for the future!',
+                quote: '"Once a Matrubhawan student, forever a child of the Mother’s Light!"',
+                highlights: ['All 25 Batches Grand Roll Call', 'Guru Vandana of Founding Bhais & Apas', 'Release of Souvenir "Matrujyoti"']
+            }
+        ];
+        let activeMilestoneIndex = 4; // Default to Silver Jubilee
+
+        function renderMilestones() {
+            const tabsContainer = document.getElementById('milestoneTabs');
+            const spotlight = document.getElementById('milestoneSpotlight');
+            if (!tabsContainer || !spotlight) return;
+
+            tabsContainer.innerHTML = milestonesData.map((m, idx) => `
+                <button onclick="selectMilestone(${idx})" class="px-4 sm:px-5 py-2.5 rounded-full font-serif font-bold text-xs sm:text-sm transition-all ${idx === activeMilestoneIndex ? 'bg-gold-gradient text-royalGreen-950 shadow-xl scale-105' : 'bg-white/10 text-gold-300 hover:bg-white/20 border border-gold-400/30'}">
+                    ${m.yearLabel}
+                </button>
+            `).join('');
+
+            const cur = milestonesData[activeMilestoneIndex];
+            spotlight.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 text-left">
+                        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500/20 border border-gold-400 text-gold-300 text-xs font-bold mb-3">
+                            ${cur.odiaSub}
+                        </span>
+                        <h3 class="font-serif font-extrabold text-2xl sm:text-4xl text-white mb-3">${cur.title}</h3>
+                        <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed mb-5">${cur.desc}</p>
+                        <div class="flex flex-wrap gap-2.5">
+                            ${cur.highlights.map(h => `
+                                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-royalGreen-950/90 border border-gold-400/40 text-gold-200 text-xs font-semibold">
+                                    <i class="fa-solid fa-star text-gold-400"></i> ${h}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 bg-royalGreen-950/90 border-2 border-gold-400 rounded-2xl p-6 text-center shadow-inner">
+                        <div class="w-12 h-12 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-black text-lg flex items-center justify-center mx-auto mb-3">
+                            ${cur.id}
+                        </div>
+                        <p class="font-hand text-2xl text-gold-300 leading-snug mb-3">${cur.quote}</p>
+                        <span class="text-[11px] uppercase tracking-widest text-emerald-300 block">Matrubhawan Soro Archive</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function selectMilestone(idx) {
+            activeMilestoneIndex = idx;
+            renderMilestones();
+        }
+
+        // ==========================================
+        // 4B. INSTAGRAM PHOTO GALLERY (@soro_matrubhawan)
+        // ==========================================
+        function createIllustratedCampusSvg(title, odiaSubtitle, badgeText, primaryAccent, iconGlyph) {
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+                <defs>
+                    <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#1E3F30"/>
+                        <stop offset="55%" stop-color="#28523F"/>
+                        <stop offset="100%" stop-color="#356952"/>
+                    </linearGradient>
+                    <linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#F3E5AB"/>
+                        <stop offset="50%" stop-color="#D4AF37"/>
+                        <stop offset="100%" stop-color="#AA7C11"/>
+                    </linearGradient>
+                </defs>
+                <rect width="800" height="800" fill="url(#bgG)"/>
+                <circle cx="400" cy="360" r="250" fill="none" stroke="url(#goldG)" stroke-width="2" stroke-dasharray="8 8" opacity="0.35"/>
+                <circle cx="400" cy="360" r="190" fill="${primaryAccent}" opacity="0.12"/>
+                <rect x="36" y="36" width="728" height="728" rx="36" fill="none" stroke="url(#goldG)" stroke-width="6"/>
+                <rect x="230" y="92" width="340" height="44" rx="22" fill="url(#goldG)"/>
+                <text x="400" y="121" text-anchor="middle" fill="#1E3F30" font-family="Cinzel, serif" font-size="19" font-weight="900" letter-spacing="2">${badgeText}</text>
+                <circle cx="400" cy="310" r="105" fill="#1E3F30" stroke="url(#goldG)" stroke-width="5"/>
+                <text x="400" y="340" text-anchor="middle" fill="#F3E5AB" font-size="86">${iconGlyph}</text>
+                <text x="400" y="485" text-anchor="middle" fill="#F3E5AB" font-family="sans-serif" font-size="26" font-weight="bold">${odiaSubtitle}</text>
+                <text x="400" y="540" text-anchor="middle" fill="#FFFFFF" font-family="Cinzel, serif" font-size="34" font-weight="bold">${title}</text>
+                <text x="400" y="635" text-anchor="middle" fill="#D4AF37" font-family="Cinzel, serif" font-size="22" font-weight="bold">MATRUBHAWAN SORO • ESTD 2000</text>
+                <text x="400" y="675" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="18">@soro_matrubhawan</text>
+            </svg>`;
+            return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+        }
+
+        // No dummy Unsplash stock images! Uses your real Silver Jubilee Logo + Authentic Matrubhawan Soro Commemorative Posters until specific IG post URLs are pasted.
+        const defaultIgPostsData = [
+            {
+                id: 1,
+                category: 'Jubilee',
+                title: 'Official 25th Silver Jubilee Emblem (@soro_matrubhawan)',
+                odiaTag: 'ରୌପ୍ୟ ଜୟନ୍ତୀ ପ୍ରତୀକ ଉନ୍ମୋଚନ',
+                caption: 'Celebrating 25 luminous years (2000–2025/26) of Centre of Sri Aurobindo Integral Education, Matrubhawan Soro. Nurturing Individuals, Building Tomorrow! #MatrubhawanSoro25',
+                image: 'logo_t.jpg',
+                fallbackSvg: createIllustratedCampusSvg('SILVER JUBILEE', 'ରୌପ୍ୟ ଜୟନ୍ତୀ ପ୍ରତୀକ ଉନ୍ମୋଚନ', '25 YEARS', '#D4AF37', '🪷'),
+                postUrl: 'https://www.instagram.com/soro_matrubhawan/',
+                likes: 486,
+                comments: 64,
+                date: 'Official Emblem • @soro_matrubhawan',
+                liked: false,
+                isAuthenticLogo: true
+            },
+            {
+                id: 2,
+                category: 'Pranam',
+                title: 'Morning Pranam & Silent Assembly',
+                odiaTag: 'ସକାଳର ସମୂହ ପ୍ରଣାମ ଓ ଧ୍ୟାନ',
+                caption: 'Every morning at Matrubhawan Soro begins in sacred silence, floral offerings, and collective Pranam under The Mother’s blessings. (Click "+ Add Post" above to replace with a specific Instagram post link!)',
+                image: createIllustratedCampusSvg('MORNING PRANAM', 'ସକାଳର ସମୂହ ପ୍ରଣାମ ଓ ଧ୍ୟାନ', 'MATRUBHAWAN SORO', '#D4AF37', '🪷'),
+                fallbackSvg: createIllustratedCampusSvg('MORNING PRANAM', 'ସକାଳର ସମୂହ ପ୍ରଣାମ ଓ ଧ୍ୟାନ', 'MATRUBHAWAN SORO', '#D4AF37', '🪷'),
+                postUrl: 'https://www.instagram.com/soro_matrubhawan/',
+                likes: 392,
+                comments: 41,
+                date: 'Matrubhawan Tradition • @soro_matrubhawan',
+                liked: false,
+                isPlaceholderCard: true
+            },
+            {
+                id: 3,
+                category: 'Alumni',
+                title: 'Smruti Milan — 25 Batches Homecoming (2000–2026)',
+                odiaTag: 'ପୂରାତନ ଛାତ୍ରଛାତ୍ରୀ ଓ ଭାଇ-ଅପା ମିଳନ',
+                caption: 'Generations of students from 2000 to 2026 reuniting at Soro campus with their beloved Bhais and Apas. Paste any @soro_matrubhawan Reel or Post URL above to embed it live here!',
+                image: createIllustratedCampusSvg('SMRUTI MILAN', '୨୦୦୦–୨୦୨୬ ବ୍ୟାଚ୍ ମହାସମାବେଶ', 'DEC 28 & 29, 2026', '#10B981', '🎓'),
+                fallbackSvg: createIllustratedCampusSvg('SMRUTI MILAN', '୨୦୦୦–୨୦୨୬ ବ୍ୟାଚ୍ ମହାସମାବେଶ', 'DEC 28 & 29, 2026', '#10B981', '🎓'),
+                postUrl: 'https://www.instagram.com/soro_matrubhawan/',
+                likes: 518,
+                comments: 78,
+                date: 'Silver Jubilee Reunion • @soro_matrubhawan',
+                liked: false,
+                isPlaceholderCard: true
+            }
+        ];
+
+        let igPostsData = [];
+        let currentIgFilter = 'ALL';
+        let activeLightboxPostId = null;
+
+        function loadIgPostsState() {
+            try {
+                const saved = JSON.parse(localStorage.getItem('mbs_ig_posts_v3') || 'null');
+                if (saved && Array.isArray(saved) && saved.length > 0) {
+                    igPostsData = saved;
+                } else {
+                    igPostsData = [...defaultIgPostsData];
+                }
+            } catch (e) {
+                igPostsData = [...defaultIgPostsData];
+            }
+        }
+
+        function saveIgPostsState() {
+            try {
+                localStorage.setItem('mbs_ig_posts_v3', JSON.stringify(igPostsData));
+            } catch (e) {}
+        }
+
+        function clearDemoIgPosts() {
+            const realOnly = igPostsData.filter(p => !p.isPlaceholderCard);
+            igPostsData = realOnly.length > 0 ? realOnly : [defaultIgPostsData[0]];
+            saveIgPostsState();
+            renderIgGallery();
+            showToast('✨ Removed placeholder cards! Only your official logo & real pinned Instagram posts are shown.', 'fa-check');
+        }
+
+        function toggleAddIgPostDrawer() {
+            const drawer = document.getElementById('addIgPostDrawer');
+            if (!drawer) return;
+            drawer.classList.toggle('hidden');
+        }
+
+        function extractInstagramShortcode(url) {
+            if (!url) return null;
+            const match = url.match(/instagram\.com\/(?:p|reel|tv)\/([A-Za-z0-9_-]+)/i);
+            return match ? match[1] : null;
+        }
+
+        function handleAddCustomIgPost(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('newIgPhotoFile');
+            const urlInput = document.getElementById('newIgUrl');
+            const catInput = document.getElementById('newIgCategory');
+            const titleInput = document.getElementById('newIgTitle');
+
+            const title = titleInput ? titleInput.value.trim() : 'Matrubhawan Soro Moment';
+            const category = catInput ? catInput.value : 'Jubilee';
+            const rawUrl = urlInput ? urlInput.value.trim() : '';
+            const shortcode = extractInstagramShortcode(rawUrl);
+
+            const finalizePostAddition = (imageSource) => {
+                const newPost = {
+                    id: Date.now(),
+                    category,
+                    title,
+                    odiaTag: 'ମାତୃଭବନ ସୋର • @soro_matrubhawan',
+                    caption: `${title} — Shared from @soro_matrubhawan Silver Jubilee collection. #MatrubhawanSoro25`,
+                    image: imageSource || 'logo_t.jpg',
+                    fallbackSvg: createIllustratedCampusSvg(title.slice(0, 18).toUpperCase(), 'ମାତୃଭବନ ସୋର', category.toUpperCase(), '#D4AF37', '📸'),
+                    postUrl: rawUrl || 'https://www.instagram.com/soro_matrubhawan/',
+                    igShortcode: shortcode,
+                    likes: 108,
+                    comments: 14,
+                    date: 'Just Pinned • @soro_matrubhawan',
+                    liked: false
+                };
+
+                igPostsData.unshift(newPost);
+                saveIgPostsState();
+                filterIgGallery('ALL');
+
+                if (fileInput) fileInput.value = '';
+                if (urlInput) urlInput.value = '';
+                if (titleInput) titleInput.value = '';
+                document.getElementById('addIgPostDrawer').classList.add('hidden');
+
+                launchGoldConfetti();
+                showToast(`📸 Pinned "${title}" to the @soro_matrubhawan Gallery!`, 'fa-instagram');
+            };
+
+            if (fileInput && fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    finalizePostAddition(e.target.result);
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                finalizePostAddition(rawUrl && !shortcode ? rawUrl : 'logo_t.jpg');
+            }
+        }
+
+        function filterIgGallery(cat) {
+            currentIgFilter = cat;
+            document.querySelectorAll('.ig-cat-btn').forEach(btn => {
+                if (btn.getAttribute('data-ig-cat') === cat) {
+                    btn.className = 'ig-cat-btn px-4 py-1.5 rounded-full bg-gold-gradient text-royalGreen-950 font-serif font-bold text-xs shadow transition';
+                } else {
+                    btn.className = 'ig-cat-btn px-4 py-1.5 rounded-full bg-white/10 text-gold-200 hover:bg-white/20 border border-gold-400/30 font-serif font-bold text-xs transition';
+                }
+            });
+            renderIgGallery();
+        }
+
+        function renderIgGallery() {
+            const grid = document.getElementById('igGalleryGrid');
+            const totalBadge = document.getElementById('igTotalPostsCount');
+            if (totalBadge) totalBadge.textContent = String(igPostsData.length);
+            if (!grid) return;
+
+            const items = currentIgFilter === 'ALL'
+                ? igPostsData
+                : igPostsData.filter(p => p.category === currentIgFilter);
+
+            grid.innerHTML = items.map(post => {
+                const hasDirectPostEmbed = !!post.igShortcode;
+                const mediaContent = hasDirectPostEmbed
+                    ? `<div class="w-full bg-white overflow-hidden">
+                           <iframe src="https://www.instagram.com/p/${post.igShortcode}/embed" class="w-full h-[460px] border-0" loading="lazy" title="${post.title}" allowtransparency="true"></iframe>
+                       </div>`
+                    : `<div onclick="openIgLightbox(${post.id})" class="relative aspect-square bg-royalGreen-950 overflow-hidden cursor-pointer">
+                           <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='${post.fallbackSvg || FALLBACK_LOGO_SVG}';">
+                           <!-- Subtle Bottom Gradient Tag -->
+                           <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent p-4 flex items-end justify-between">
+                               <div>
+                                   <span class="text-[11px] font-bold text-gold-300 block">${post.odiaTag}</span>
+                                   <h4 class="font-serif font-bold text-sm text-white leading-snug">${post.title}</h4>
+                               </div>
+                               <span class="w-8 h-8 rounded-full bg-gold-500/90 text-royalGreen-950 flex items-center justify-center text-xs shadow">
+                                   <i class="fa-solid fa-expand"></i>
+                               </span>
+                           </div>
+                       </div>`;
+
+                return `
+                <div class="bg-white rounded-3xl border-2 border-gold-400/60 shadow-lg hover:shadow-2xl overflow-hidden transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <!-- Instagram Authentic Card Top Bar -->
+                        <div class="px-4 py-3 bg-royalGreen-950 text-white flex items-center justify-between">
+                            <a href="https://www.instagram.com/soro_matrubhawan/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 group/user">
+                                <div class="w-8 h-8 rounded-full p-0.5 bg-gradient-to-tr from-amber-400 via-pink-500 to-purple-600">
+                                    <img src="logo_t.jpg" alt="@soro_matrubhawan" class="w-full h-full rounded-full object-cover bg-black" onerror="this.onerror=null; this.src=FALLBACK_LOGO_SVG;">
+                                </div>
+                                <div>
+                                    <span class="text-xs font-serif font-bold text-gold-300 group-hover/user:underline block leading-none">soro_matrubhawan</span>
+                                    <span class="text-[10px] text-emerald-200">Matrubhawan Soro • Official</span>
+                                </div>
+                            </a>
+                            <span class="px-2.5 py-0.5 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-300 text-[10px] font-bold">
+                                ${post.category}
+                            </span>
+                        </div>
+
+                        <!-- Square Photo or Direct Instagram Post Embed -->
+                        ${mediaContent}
+
+                        <!-- Instagram Action Bar & Caption -->
+                        <div class="p-5">
+                            <div class="flex items-center justify-between mb-2.5">
+                                <div class="flex items-center gap-4">
+                                    <button onclick="likeIgPost(${post.id})" class="inline-flex items-center gap-1.5 text-sm font-bold ${post.liked ? 'text-red-600 scale-105' : 'text-royalGreen-900 hover:text-red-600'} transition">
+                                        <i class="fa-solid fa-heart text-red-500 text-lg"></i>
+                                        <span>${post.likes}</span>
+                                    </button>
+                                    <button onclick="openIgLightbox(${post.id})" class="inline-flex items-center gap-1 text-royalGreen-800 hover:text-gold-700 text-xs font-semibold">
+                                        <i class="fa-regular fa-comment text-base"></i>
+                                        <span>${post.comments || 24}</span>
+                                    </button>
+                                    <a href="${post.postUrl || 'https://www.instagram.com/soro_matrubhawan/'}" target="_blank" rel="noopener noreferrer" class="text-royalGreen-800 hover:text-gold-700 text-sm" title="Share / Open on Instagram">
+                                        <i class="fa-regular fa-paper-plane"></i>
+                                    </a>
+                                </div>
+                                <a href="${post.postUrl || 'https://www.instagram.com/soro_matrubhawan/'}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-gold-700 hover:text-royalGreen-950 flex items-center gap-1">
+                                    <i class="fa-brands fa-instagram"></i> View on IG ↗
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-700 line-clamp-2 leading-relaxed">
+                                <strong class="text-royalGreen-950 font-bold mr-1">soro_matrubhawan</strong>${post.caption}
+                            </p>
+                            <span class="text-[10px] text-gray-400 uppercase tracking-wider mt-2 block">${post.date}</span>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        function likeIgPost(postId) {
+            const post = igPostsData.find(p => p.id === postId);
+            if (!post) return;
+            post.likes++;
+            post.liked = true;
+            saveIgPostsState();
+            renderIgGallery();
+            launchGoldConfetti();
+            showToast(`❤️ Liked "${post.title}" (@soro_matrubhawan)`, 'fa-heart');
+        }
+
+        function openIgLightbox(postId) {
+            const post = igPostsData.find(p => p.id === postId);
+            if (!post) return;
+            activeLightboxPostId = postId;
+            const imgEl = document.getElementById('lightboxImg');
+            imgEl.onerror = function() { this.onerror = null; this.src = post.fallbackSvg || FALLBACK_LOGO_SVG; };
+            imgEl.src = post.image;
+            document.getElementById('lightboxCategory').textContent = post.odiaTag;
+            document.getElementById('lightboxTitle').textContent = post.title;
+            document.getElementById('lightboxCaption').textContent = post.caption;
+            document.getElementById('lightboxLikesCount').textContent = `${post.likes} Likes`;
+            document.getElementById('lightboxDate').textContent = post.date;
+            document.getElementById('igLightboxModal').classList.remove('hidden');
+        }
+
+        function closeIgLightbox() {
+            document.getElementById('igLightboxModal').classList.add('hidden');
+        }
+
+        function likeActiveLightboxPost() {
+            if (!activeLightboxPostId) return;
+            likeIgPost(activeLightboxPostId);
+            const post = igPostsData.find(p => p.id === activeLightboxPostId);
+            if (post) {
+                document.getElementById('lightboxLikesCount').textContent = `${post.likes} Likes`;
+            }
+        }
+
+        function toggleLiveIgEmbed() {
+            const container = document.getElementById('liveIgEmbedContainer');
+            const label = document.getElementById('liveIgEmbedToggleText');
+            if (!container) return;
+            container.classList.toggle('hidden');
+            if (label) {
+                label.textContent = container.classList.contains('hidden')
+                    ? 'Show Official Instagram Profile Widget'
+                    : 'Hide Official Instagram Profile Widget';
+            }
+        }
+
+        // ==========================================
+        // 5. INTERACTIVE 5-FOLD INTEGRAL EDUCATION PILLARS
+        // ==========================================
+        const pillarsData = [
+            {
+                name: 'Physical',
+                odia: 'ଶାରୀରିକ ଶିକ୍ଷା (Sharirik)',
+                icon: 'fa-person-running',
+                short: 'Asanas, sports, discipline, strength, and bodily harmony.',
+                detail: 'Physical education at Matrubhawan Soro develops endurance, agility, posture, and team spirit through daily morning drills, yogasanas, and joyful indigenous outdoor games.'
+            },
+            {
+                name: 'Vital',
+                odia: 'ପ୍ରାଣିକ ଶିକ୍ଷା (Pranik)',
+                icon: 'fa-palette',
+                short: 'Refining emotions, courage, music, drama, and art.',
+                detail: 'Vital education harmonizes emotions and life-energy through Odissi dance, devotional music, painting, craft, and stage drama—cultivating courage, generosity, and aesthetic beauty.'
+            },
+            {
+                name: 'Mental',
+                odia: 'ମାନସିକ ଶିକ୍ଷା (Manasik)',
+                icon: 'fa-lightbulb',
+                short: 'Concentration, curiosity, science, and mental silence.',
+                detail: 'Beyond rote memorization, Mental education awakens observation, analytical clarity, concentration, and a lifelong love for discovery across sciences, mathematics, and literature.'
+            },
+            {
+                name: 'Psychic',
+                odia: 'ଚୈତ୍ୟ ଶିକ୍ଷା (Chaitik)',
+                icon: 'fa-heart-pulse',
+                short: 'Awakening the inner soul-spark, gratitude, and Pranam.',
+                detail: 'The heart of Matrubhawan Soro—helping every child discover their inner psychic presence through silent morning Pranam, truthfulness, kindness, and deep gratitude toward parents and Gurus.'
+            },
+            {
+                name: 'Spiritual',
+                odia: 'ଆଧ୍ୟାତ୍ମିକ ଶିକ୍ଷା (Adhyatmik)',
+                icon: 'fa-sun',
+                short: 'Unity with all creation and living in Higher Light.',
+                detail: 'Spiritual education inspires students to see the Divine in all beings, serve society selflessly, and aspire toward a luminous tomorrow guided by Sri Aurobindo and The Mother.'
+            }
+        ];
+        let activePillarIndex = 3; // Default to Psychic
+
+        function renderPillars() {
+            const grid = document.getElementById('pillarsGrid');
+            const detailBox = document.getElementById('pillarDetailBox');
+            if (!grid || !detailBox) return;
+
+            grid.innerHTML = pillarsData.map((p, idx) => `
+                <button onclick="selectPillar(${idx})" class="text-center rounded-3xl p-6 transition-all duration-300 border-2 ${idx === activePillarIndex ? 'bg-royalGreen-900 text-white border-gold-400 shadow-2xl -translate-y-1.5' : 'bg-pearl text-royalGreen-950 border-gold-400/50 hover:bg-royalGreen-50 shadow-md'}">
+                    <div class="w-14 h-14 mx-auto rounded-2xl ${idx === activePillarIndex ? 'bg-gold-gradient text-royalGreen-950' : 'bg-royalGreen-900 text-gold-400'} flex items-center justify-center text-2xl mb-4 transition">
+                        <i class="fa-solid ${p.icon}"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-lg ${idx === activePillarIndex ? 'text-gold-300' : 'text-royalGreen-950'} mb-1">${idx + 1}. ${p.name}</h3>
+                    <span class="text-xs font-semibold ${idx === activePillarIndex ? 'text-emerald-200' : 'text-gold-700'} block mb-2">${p.odia}</span>
+                    <p class="text-xs ${idx === activePillarIndex ? 'text-emerald-100/90' : 'text-gray-600'} leading-relaxed">${p.short}</p>
+                </button>
+            `).join('');
+
+            const cur = pillarsData[activePillarIndex];
+            detailBox.innerHTML = `
+                <div class="flex items-center gap-4">
+                    <div class="w-16 h-16 rounded-2xl bg-gold-gradient text-royalGreen-950 flex items-center justify-center text-3xl flex-shrink-0 shadow-lg">
+                        <i class="fa-solid ${cur.icon}"></i>
+                    </div>
+                    <div class="text-left">
+                        <span class="text-xs uppercase tracking-widest text-gold-300 font-bold block">${cur.odia}</span>
+                        <h4 class="font-serif font-extrabold text-xl sm:text-2xl text-white">The ${cur.name} Dimension at Matrubhawan</h4>
+                        <p class="text-emerald-100/90 text-xs sm:text-sm mt-1 leading-relaxed">${cur.detail}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function selectPillar(idx) {
+            activePillarIndex = idx;
+            renderPillars();
+        }
+
+        // ==========================================
+        // 6. TWO-DAY SILVER JUBILEE SCHEDULE LOGIC
+        // ==========================================
+        const scheduleData = {
+            1: [
+                { time: '07:30 AM', title: 'Prabhat Pheri & Sacred Sankha Dhwani', odia: 'ପ୍ରଭାତ ଫେରୀ ଓ ଶଙ୍ଖ ଧ୍ୱନି', desc: 'Procession across Soro town by students, alumni, and teachers carrying The Mother’s flag.' },
+                { time: '09:00 AM', title: 'Collective Morning Pranam & Flag Hoisting', odia: 'ସମୂହ ପ୍ରଣାମ ଓ ପତାକା ଉତ୍ତୋଳନ', desc: 'Unfurling the Spiritual Flag of The Mother and 10-minute silent meditation in the courtyard.' },
+                { time: '10:30 AM', title: 'Guru Vandana & Founding Bhais-Apas Felicitation', odia: 'ଗୁରୁ ବନ୍ଦନା ଓ ପ୍ରତିଷ୍ଠାତା ଭାଇ-ଅପା ସମ୍বର୍ଦ୍ଧନା', desc: 'Honouring the pioneer Gurus who laid the foundation of Matrubhawan Soro in 2000.' },
+                { time: '01:00 PM', title: 'Community Jubilee Prasad Sevana', odia: 'ସମୂହ ପ୍ରସାଦ ସେବନ', desc: 'Reliving the joy of eating together with classmates, Bhais, and Apas under the campus shamiana.' },
+                { time: '04:00 PM', title: 'Integral Education & Science-Art Exhibition', odia: 'ପୂର୍ଣ୍ଣାଙ୍ଗ ଶିକ୍ଷା ଓ ବିଜ୍ଞାନ-କଳା ପ୍ରଦର୍ଶନୀ', desc: 'Showcasing 25 years of student creations, archival photographs, and handcrafted models.' },
+                { time: '06:00 PM', title: 'Sanskrutika Sandhya & Odissi Vandana', odia: 'ସାଂସ୍କୃତିକ ସନ୍ଧ୍ୟା ଓ ଓଡ଼ିଶୀ ନୃତ୍ୟ', desc: 'Classical dance, Sanskrit plays, and devotional songs by current students and alumni.' }
+            ],
+            2: [
+                { time: '08:00 AM', title: 'Morning Meditation & Yoga Demonstration', odia: 'ସକାଳ ଧ୍ୟାନ ଓ ଯୋଗାସନ ପ୍ରଦର୍ଶନ', desc: 'Synchronized Asanas, Pranayama, and physical education display by Matrubhawan students.' },
+                { time: '10:00 AM', title: 'Smruti Milan: 25 Batches Grand Roll Call (2000–2026)', odia: 'ସ୍ମୃତି ମିଳନ: ୨୫ଟି ବ୍ୟାଚ୍‌ର ମହାସମାବେଶ', desc: 'Batch-by-batch stage introduction, ringing the old brass bell, and sharing childhood stories.' },
+                { time: '12:30 PM', title: 'Unveiling of Silver Jubilee Souvenir "Matrujyoti"', odia: 'ରୌପ୍ୟ ଜୟନ୍ତୀ ସ୍ମରଣିକା ଉନ୍ମୋଚନ', desc: 'Release of the commemorative 25th Anniversary volume featuring articles by teachers and alumni.' },
+                { time: '03:00 PM', title: 'Nostalgic Alumni Games & Musical Chairs', odia: 'ପୂରାତନ ଛାତ୍ରଛାତ୍ରୀଙ୍କ କ୍ରୀଡ଼ା ଓ ମନୋରଞ୍ଜନ', desc: 'Friendly tug-of-war, relay race, and classroom quiz between alumni batches.' },
+                { time: '05:30 PM', title: '1,000 Golden Diya Lighting (Sahasra Deepa Daan)', odia: 'ସହସ୍ର ଦୀପ ଦାନ ଓ ସମୂହ ପ୍ରାର୍ଥନା', desc: 'Illuminating the entire Matrubhawan Soro campus with 1,000 earthen lamps for the next 25 years.' },
+                { time: '07:00 PM', title: 'Closing Blessings & Mahaprasad', odia: 'ଉଦ୍‌ଯାପନୀ ଆଶୀର୍ବାଦ ଓ ମହାପ୍ରସାଦ', desc: 'Collective pledge to carry The Mother’s light forward and farewell dinner.' }
+            ]
+        };
+        let activeScheduleDay = 1;
+
+        function switchScheduleDay(day) {
+            activeScheduleDay = day;
+            const tab1 = document.getElementById('schedTab1');
+            const tab2 = document.getElementById('schedTab2');
+            if (tab1 && tab2) {
+                if (day === 1) {
+                    tab1.className = 'px-6 py-3 rounded-xl bg-royalGreen-900 text-gold-300 border-2 border-gold-400 font-serif font-bold text-xs sm:text-sm shadow-lg transition';
+                    tab2.className = 'px-6 py-3 rounded-xl bg-royalGreen-50 text-royalGreen-900 hover:bg-royalGreen-100 border border-royalGreen-800/20 font-serif font-bold text-xs sm:text-sm transition';
+                } else {
+                    tab2.className = 'px-6 py-3 rounded-xl bg-royalGreen-900 text-gold-300 border-2 border-gold-400 font-serif font-bold text-xs sm:text-sm shadow-lg transition';
+                    tab1.className = 'px-6 py-3 rounded-xl bg-royalGreen-50 text-royalGreen-900 hover:bg-royalGreen-100 border border-royalGreen-800/20 font-serif font-bold text-xs sm:text-sm transition';
+                }
+            }
+            renderScheduleTimeline();
+        }
+
+        function renderScheduleTimeline() {
+            const container = document.getElementById('scheduleTimelineContainer');
+            if (!container) return;
+            const items = scheduleData[activeScheduleDay] || [];
+            container.innerHTML = items.map(ev => `
+                <div class="bg-white rounded-2xl p-6 border-2 border-gold-400/50 shadow-md hover:shadow-xl transition flex items-start gap-4">
+                    <div class="px-3.5 py-2 rounded-xl bg-royalGreen-900 text-gold-300 font-serif font-bold text-xs whitespace-nowrap border border-gold-400/40 shadow">
+                        ${ev.time}
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-gold-700 block mb-0.5">${ev.odia}</span>
+                        <h4 class="font-serif font-bold text-lg text-royalGreen-950 mb-1">${ev.title}</h4>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">${ev.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ==========================================
+        // 7. SMRUTI PHALAKA (POLAROID MEMORY WALL) LOGIC
+        // ==========================================
+        const defaultPolaroids = [
+            {
+                id: 101,
+                name: 'Satyajit Panda',
+                batch: 2004,
+                tag: 'Morning Pranam 🪷',
+                text: 'Standing barefoot in the cool morning breeze during Pranam and hearing the flute music before class still gives me goosebumps!',
+                likes: 84,
+                tilt: '-rotate-1'
+            },
+            {
+                id: 102,
+                name: 'Priyanka Nayak',
+                batch: 2010,
+                tag: 'Bhai & Apa Blessings 🙏',
+                text: 'How lovingly our Apas corrected our handwriting and taught us Sanskrit prayers. Matrubhawan gave us values for life.',
+                likes: 96,
+                tilt: 'rotate-1'
+            },
+            {
+                id: 103,
+                name: 'Debasish Behera',
+                batch: 2014,
+                tag: 'Tiffin Bell & Friends 🍱',
+                text: 'The brass tiffin bell at recess! Sharing Chakuli and Mudhi under the mango tree with ten friends at once.',
+                likes: 73,
+                tilt: '-rotate-2'
+            },
+            {
+                id: 104,
+                name: 'ipsita Mohapatra',
+                batch: 2019,
+                tag: 'Sports & Saraswati Puja 🏅',
+                text: 'Waking up at 5 AM on Saraswati Puja to decorate the campus with marigold flowers and waiting for Khichdi Prasad!',
+                likes: 68,
+                tilt: 'rotate-2'
+            }
+        ];
+
+        let polaroidMemories = [];
+        let activePolaroidFilter = 'ALL';
+
+        function loadPolaroidMemories() {
+            try {
+                const saved = JSON.parse(localStorage.getItem('mbs_polaroid_memories') || 'null');
+                if (saved && Array.isArray(saved) && saved.length > 0) {
+                    polaroidMemories = saved;
+                } else {
+                    polaroidMemories = [...defaultPolaroids];
+                }
+            } catch (e) {
+                polaroidMemories = [...defaultPolaroids];
+            }
+        }
+
+        function savePolaroidMemories() {
+            try {
+                localStorage.setItem('mbs_polaroid_memories', JSON.stringify(polaroidMemories));
+            } catch (e) {}
+        }
+
+        function filterPolaroids(range) {
+            activePolaroidFilter = range;
+            document.querySelectorAll('.pol-filter-btn').forEach(btn => {
+                if (btn.getAttribute('data-pol-filter') === range) {
+                    btn.className = 'pol-filter-btn px-4 py-1.5 rounded-full bg-royalGreen-900 text-gold-300 border border-gold-400 font-serif font-bold text-xs shadow transition';
+                } else {
+                    btn.className = 'pol-filter-btn px-4 py-1.5 rounded-full bg-pearl text-royalGreen-900 hover:bg-royalGreen-100 border border-gold-400/50 font-serif font-bold text-xs transition';
+                }
+            });
+            renderPolaroids();
+        }
+
+        function renderPolaroids() {
+            const grid = document.getElementById('polaroidGrid');
+            const badge = document.getElementById('polaroidCountBadge');
+            if (!grid) return;
+
+            const filtered = polaroidMemories.filter(item => {
+                if (activePolaroidFilter === 'ALL') return true;
+                const b = parseInt(item.batch, 10);
+                if (activePolaroidFilter === '2000-2008') return b >= 2000 && b <= 2008;
+                if (activePolaroidFilter === '2009-2016') return b >= 2009 && b <= 2016;
+                if (activePolaroidFilter === '2017-2026') return b >= 2017 && b <= 2026;
+                return true;
+            });
+
+            if (badge) {
+                badge.textContent = `${filtered.length} ${filtered.length === 1 ? 'Memory' : 'Memories'} Pinned`;
+            }
+
+            grid.innerHTML = filtered.map(item => `
+                <div class="polaroid-card rounded-2xl border border-gold-400/60 transform ${item.tilt || 'rotate-0'} flex flex-col justify-between">
+                    <div>
+                        <div class="bg-royalGreen-950 text-gold-300 rounded-xl px-3.5 py-2 flex items-center justify-between mb-3">
+                            <span class="text-xs font-serif font-bold">${item.tag}</span>
+                            <span class="px-2 py-0.5 rounded-full bg-gold-500 text-royalGreen-950 font-serif font-extrabold text-[10px]">
+                                Batch of ${item.batch}
+                            </span>
+                        </div>
+                        <p class="font-hand text-2xl text-royalGreen-950 leading-snug mb-4 px-1">
+                            "${item.text}"
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-gold-300/60 flex items-center justify-between px-1">
+                        <div>
+                            <h4 class="font-serif font-bold text-xs text-royalGreen-900">— ${item.name}</h4>
+                            <span class="text-[10px] text-gray-500">Matrubhawan Soro Alumni</span>
+                        </div>
+                        <button onclick="likePolaroid(${item.id})" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-royalGreen-50 hover:bg-royalGreen-900 text-royalGreen-900 hover:text-gold-300 border border-gold-400 text-xs font-bold transition">
+                            <i class="fa-solid fa-heart text-red-500"></i>
+                            <span>${item.likes}</span>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function addPolaroidMemory(e) {
+            if (e) e.preventDefault();
+            const nameEl = document.getElementById('memoryInputName');
+            const batchEl = document.getElementById('memoryInputBatch');
+            const tagEl = document.getElementById('memoryInputTag');
+            const textEl = document.getElementById('memoryInputText');
+
+            const name = nameEl ? nameEl.value.trim() : '';
+            const batch = batchEl ? parseInt(batchEl.value, 10) : 2012;
+            const tag = tagEl ? tagEl.value : 'Morning Pranam 🪷';
+            const text = textEl ? textEl.value.trim() : '';
+
+            if (!name || !text) return;
+
+            const tilts = ['-rotate-1', 'rotate-1', '-rotate-2', 'rotate-2'];
+            const newCard = {
+                id: Date.now(),
+                name,
+                batch,
+                tag,
+                text,
+                likes: 1,
+                tilt: tilts[polaroidMemories.length % tilts.length]
+            };
+
+            polaroidMemories.unshift(newCard);
+            savePolaroidMemories();
+            filterPolaroids('ALL');
+
+            if (nameEl) nameEl.value = '';
+            if (textEl) textEl.value = '';
+
+            launchGoldConfetti();
+            showToast(`📌 Pinned ${name}'s memory (Batch of ${batch}) to Smruti Phalaka!`, 'fa-thumbtack');
+        }
+
+        function likePolaroid(id) {
+            const card = polaroidMemories.find(m => m.id === id);
+            if (!card) return;
+            card.likes++;
+            savePolaroidMemories();
+            renderPolaroids();
+            launchGoldConfetti();
+        }
+
+        // ==========================================
+        // 8. VIP PASS GENERATOR (WITH PHOTO UPLOAD & SILVER JUBILEE LOGO)
+        // ==========================================
+        const DEFAULT_AVATAR_SVG = "data:image/svg+xml;utf8," + encodeURIComponent(`
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+                <defs>
+                    <linearGradient id="avBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#356952"/>
+                        <stop offset="100%" stop-color="#28523F"/>
+                    </linearGradient>
+                </defs>
+                <rect width="240" height="240" fill="url(#avBg)"/>
+                <circle cx="120" cy="92" r="44" fill="#D4AF37"/>
+                <path d="M44 212 C44 162, 196 162, 196 212" fill="#D4AF37"/>
+                <text x="120" y="228" text-anchor="middle" fill="#F3E5AB" font-family="sans-serif" font-size="13" font-weight="bold">ALUMNI PHOTO</text>
+            </svg>
+        `);
+
+        let uploadedPassPhotoDataUrl = DEFAULT_AVATAR_SVG;
+        let preloadedLogoImg = new Image();
+        let preloadedUserPhotoImg = new Image();
+
+        function initPassImages() {
+            preloadedLogoImg = new Image();
+            // Do not set crossOrigin='anonymous' for local file:// or same-origin logo_t.jpg to avoid CORS failure when opened locally
+            preloadedLogoImg.onerror = () => {
+                preloadedLogoImg.src = FALLBACK_LOGO_SVG;
+            };
+            preloadedLogoImg.src = 'logo_t.jpg';
+
+            preloadedUserPhotoImg = new Image();
+            preloadedUserPhotoImg.src = uploadedPassPhotoDataUrl;
+
+            const thumb = document.getElementById('formPhotoThumb');
+            const previewPhoto = document.getElementById('cardPreviewPhoto');
+            if (thumb) thumb.src = uploadedPassPhotoDataUrl;
+            if (previewPhoto) previewPhoto.src = uploadedPassPhotoDataUrl;
+        }
+
+        function handlePassPhotoUpload(event) {
+            const file = event.target.files && event.target.files[0];
+            if (file) processPassPhotoFile(file);
+        }
+
+        function handlePhotoDragOver(event) {
+            event.preventDefault();
+            document.getElementById('photoDropZone').classList.add('border-gold-300', 'bg-royalGreen-900');
+        }
+
+        function handlePhotoDragLeave(event) {
+            event.preventDefault();
+            document.getElementById('photoDropZone').classList.remove('border-gold-300', 'bg-royalGreen-900');
+        }
+
+        function handlePhotoDrop(event) {
+            event.preventDefault();
+            document.getElementById('photoDropZone').classList.remove('border-gold-300', 'bg-royalGreen-900');
+            const file = event.dataTransfer && event.dataTransfer.files && event.dataTransfer.files[0];
+            if (file) processPassPhotoFile(file);
+        }
+
+        function processPassPhotoFile(file) {
+            if (!file.type.startsWith('image/')) {
+                showToast('Please select a valid image file (JPG, PNG, WEBP)', 'fa-circle-exclamation');
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const rawImg = new Image();
+                rawImg.onload = function() {
+                    // Auto center-crop to a clean 400x400 square portrait
+                    const cropCanvas = document.createElement('canvas');
+                    cropCanvas.width = 400;
+                    cropCanvas.height = 400;
+                    const cCtx = cropCanvas.getContext('2d');
+                    const minSide = Math.min(rawImg.width, rawImg.height);
+                    const sx = (rawImg.width - minSide) / 2;
+                    const sy = (rawImg.height - minSide) / 2;
+                    cCtx.drawImage(rawImg, sx, sy, minSide, minSide, 0, 0, 400, 400);
+
+                    uploadedPassPhotoDataUrl = cropCanvas.toDataURL('image/png');
+                    preloadedUserPhotoImg = new Image();
+                    preloadedUserPhotoImg.src = uploadedPassPhotoDataUrl;
+
+                    const thumb = document.getElementById('formPhotoThumb');
+                    const previewPhoto = document.getElementById('cardPreviewPhoto');
+                    if (thumb) thumb.src = uploadedPassPhotoDataUrl;
+                    if (previewPhoto) previewPhoto.src = uploadedPassPhotoDataUrl;
+
+                    showToast('📸 Your photo has been framed on the VIP Pass!', 'fa-camera');
+                };
+                rawImg.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function populateBatchDropdowns() {
+            const memSelect = document.getElementById('memoryInputBatch');
+            const passSelect = document.getElementById('passBatch');
+            let optionsHtml = '';
+            for (let y = 2000; y <= 2026; y++) {
+                const label = y === 2000 ? '2000 (Pioneer Batch)' : (y === 2026 ? '2026 (Silver Jubilee Batch)' : `${y} Batch`);
+                const selected = y === 2012 ? 'selected' : '';
+                optionsHtml += `<option value="${y}" ${selected}>${label}</option>`;
+            }
+            if (memSelect) memSelect.innerHTML = optionsHtml;
+            if (passSelect) passSelect.innerHTML = optionsHtml;
+        }
+
+        function updateLivePass() {
+            const name = document.getElementById('passName').value.trim() || 'Proud Alumni';
+            const batchYear = document.getElementById('passBatch').value || '2012';
+            const role = document.getElementById('passRole').value || '🎓 Alumni / Former Student';
+
+            document.getElementById('cardPreviewName').textContent = name;
+            document.getElementById('cardPreviewBatch').textContent = `Batch of ${batchYear}`;
+            document.getElementById('cardPreviewRole').textContent = role;
+
+            const deterministicCode = ((name.length * 137) + parseInt(batchYear, 10)) % 9000 + 1000;
+            document.getElementById('cardPreviewId').textContent = `#MBS-25-${deterministicCode}`;
+        }
+
+        function drawCircularImage(ctx, img, cx, cy, radius, borderColor, borderWidth) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+            ctx.closePath();
+            ctx.clip();
+            try {
+                ctx.drawImage(img, cx - radius, cy - radius, radius * 2, radius * 2);
+            } catch (err) {
+                ctx.fillStyle = '#052014';
+                ctx.fillRect(cx - radius, cy - radius, radius * 2, radius * 2);
+            }
+            ctx.restore();
+
+            if (borderWidth > 0) {
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+                ctx.strokeStyle = borderColor;
+                ctx.lineWidth = borderWidth;
+                ctx.stroke();
+                ctx.restore();
+            }
+        }
+
+        function handleDownloadPassPNG(e) {
+            if (e) e.preventDefault();
+            updateLivePass();
+
+            const passCanvas = document.getElementById('vipPassCanvas');
+            const pCtx = passCanvas.getContext('2d');
+
+            const name = document.getElementById('passName').value.trim() || 'Ananya Mohanty';
+            const batchYear = document.getElementById('passBatch').value || '2012';
+            const role = document.getElementById('passRole').value || 'Alumni / Former Student';
+            const passId = document.getElementById('cardPreviewId').textContent;
+
+            const renderPassToCanvas = (logoImgToUse) => {
+                // 1. Soft Faded Heritage Sage Green Gradient Background
+                const bgGrad = pCtx.createLinearGradient(0, 0, 0, 1140);
+                bgGrad.addColorStop(0, '#1E3F30');
+                bgGrad.addColorStop(0.5, '#28523F');
+                bgGrad.addColorStop(1, '#1E3F30');
+                pCtx.fillStyle = bgGrad;
+                pCtx.fillRect(0, 0, 800, 1140);
+
+                // 2. Outer Metallic Gold Border
+                pCtx.strokeStyle = '#D4AF37';
+                pCtx.lineWidth = 16;
+                pCtx.strokeRect(24, 24, 752, 1092);
+
+                pCtx.strokeStyle = '#F3E5AB';
+                pCtx.lineWidth = 3;
+                pCtx.strokeRect(42, 42, 716, 1056);
+
+                // 3. Draw Silver Jubilee Logo at Top Center
+                drawCircularImage(pCtx, logoImgToUse, 400, 140, 70, '#D4AF37', 6);
+
+                // 4. School & Silver Jubilee Header Text
+                pCtx.fillStyle = '#F3E5AB';
+                pCtx.font = 'bold 20px Cinzel, serif';
+                pCtx.textAlign = 'center';
+                pCtx.fillText('★ ESTD 2000 • 25TH YEARS SILVER JUBILEE ★', 400, 242);
+
+                pCtx.fillStyle = '#FFFFFF';
+                pCtx.font = 'bold 30px Cinzel, serif';
+                pCtx.fillText('CENTRE OF SRI AUROBINDO', 400, 282);
+
+                pCtx.fillStyle = '#D4AF37';
+                pCtx.font = 'bold 32px Cinzel, serif';
+                pCtx.fillText('INTEGRAL EDUCATION', 400, 320);
+
+                pCtx.fillStyle = '#A7F3D0';
+                pCtx.font = 'bold 24px Cinzel, serif';
+                pCtx.fillText('• MATRUBHAWAN SORO •', 400, 354);
+
+                // 5. Golden VIP Pass Ribbon Banner
+                pCtx.fillStyle = '#D4AF37';
+                pCtx.fillRect(90, 380, 620, 54);
+                pCtx.fillStyle = '#1E3F30';
+                pCtx.font = 'bold 25px Cinzel, serif';
+                pCtx.fillText('ALUMNI HOMECOMING VIP PASS', 400, 416);
+
+                // 6. White Pearl Center Card
+                pCtx.fillStyle = '#FAF8F2';
+                pCtx.fillRect(90, 460, 620, 450);
+                pCtx.strokeStyle = '#D4AF37';
+                pCtx.lineWidth = 5;
+                pCtx.strokeRect(90, 460, 620, 450);
+
+                // 7. Draw Uploaded User Portrait Inside Royal Gold Frame
+                drawCircularImage(pCtx, preloadedUserPhotoImg, 400, 585, 92, '#D4AF37', 8);
+
+                // 8. Batch Pill
+                pCtx.fillStyle = '#28523F';
+                pCtx.fillRect(250, 700, 300, 46);
+                pCtx.fillStyle = '#F3E5AB';
+                pCtx.font = 'bold 23px Cinzel, serif';
+                pCtx.fillText(`BATCH OF ${batchYear}`, 400, 731);
+
+                // 9. Attendee Full Name & Role
+                pCtx.fillStyle = '#1E3F30';
+                pCtx.font = 'bold 42px Cinzel, serif';
+                pCtx.fillText(name.slice(0, 24), 400, 805);
+
+                pCtx.fillStyle = '#356952';
+                pCtx.font = 'bold 24px sans-serif';
+                pCtx.fillText(role.replace(/[^\w\s\/()-]/g, '').trim(), 400, 850);
+
+                pCtx.fillStyle = '#AA7C11';
+                pCtx.font = 'bold 17px Cinzel, serif';
+                pCtx.fillText('NURTURING INDIVIDUALS • BUILDING TOMORROW', 400, 890);
+
+                // 10. Footer Pass ID, Dates & Venue
+                pCtx.fillStyle = '#F3E5AB';
+                pCtx.font = 'bold 24px monospace';
+                pCtx.fillText(`PASS ID: ${passId}`, 400, 965);
+
+                pCtx.fillStyle = '#FFFFFF';
+                pCtx.font = 'bold 22px sans-serif';
+                pCtx.fillText('Celebration Dates: December 28 & 29, 2026', 400, 1005);
+
+                pCtx.fillStyle = '#A7F3D0';
+                pCtx.font = '20px sans-serif';
+                pCtx.fillText('Venue: Matrubhawan Soro Campus, Balasore, Odisha', 400, 1040);
+
+                pCtx.fillStyle = '#D4AF37';
+                pCtx.font = 'bold 18px sans-serif';
+                pCtx.fillText('Official Instagram: @soro_matrubhawan', 400, 1075);
+            };
+
+            const logoSource = document.getElementById('vipPassLogoImg') || preloadedLogoImg;
+            renderPassToCanvas(logoSource);
+
+            // Trigger PNG Download (with fallback if local file:// security blocks external image canvas export)
+            let dataUrl;
+            try {
+                dataUrl = passCanvas.toDataURL('image/png');
+            } catch (secErr) {
+                const safeFallbackImg = new Image();
+                safeFallbackImg.onload = () => {
+                    renderPassToCanvas(safeFallbackImg);
+                    const safeUrl = passCanvas.toDataURL('image/png');
+                    triggerPngDownloadLink(safeUrl, name);
+                };
+                safeFallbackImg.src = FALLBACK_LOGO_SVG;
+                return true;
+            }
+
+            triggerPngDownloadLink(dataUrl, name);
+            return true;
+        }
+
+        function triggerPngDownloadLink(dataUrl, name) {
+            const link = document.createElement('a');
+            link.download = `Matrubhawan-Soro-VIP-Pass-${name.replace(/\s+/g, '-')}.png`;
+            link.href = dataUrl;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+            const banner = document.getElementById('rsvpSuccessBanner');
+            if (banner) banner.classList.remove('hidden');
+
+            ringSchoolBell(true);
+            showToast('🎓 High-Res PNG Alumni VIP Pass Downloaded!', 'fa-id-card-clip');
+        }
+
+        function sharePassOnWhatsApp() {
+            const name = document.getElementById('passName').value.trim() || 'Alumni';
+            const batch = document.getElementById('passBatch').value || '2012';
+            const text = encodeURIComponent(
+                `🪷 Pranam! I just generated my Silver Jubilee Alumni VIP Pass (${name} - Batch of ${batch}) for *Centre of Sri Aurobindo Integral Education - Matrubhawan Soro* (25 Glorious Years Celebration on Dec 28 & 29, 2026)! 🔔✨\n\nFollow updates: https://www.instagram.com/soro_matrubhawan/`
+            );
+            window.open(`https://wa.me/?text=${text}`, '_blank', 'noopener,noreferrer');
+        }
+
+        // ==========================================
+        // 9. LIVE COUNTDOWN TIMER TO DEC 28, 2026 (08:00 AM IST)
+        // ==========================================
+        function updateCountdown() {
+            const eventDate = new Date('2026-12-28T08:00:00+05:30').getTime();
+            const now = new Date().getTime();
+            const diff = Math.max(0, eventDate - now);
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+            document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+            document.getElementById('cd-secs').textContent = String(secs).padStart(2, '0');
+            return days >= 0;
+        }
+
+        // ==========================================
+        // 10. MOBILE MENU TOGGLE
+        // ==========================================
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('mobileMenuIcon');
+            if (!menu) return;
+            menu.classList.toggle('hidden');
+            if (icon) {
+                icon.className = menu.classList.contains('hidden') ? 'fa-solid fa-bars text-xl' : 'fa-solid fa-xmark text-xl';
+            }
+        }
+
+        // ==========================================
+        // INITIALIZE ALL COMPONENTS ON DOM LOAD
+        // ==========================================
+        window.addEventListener('DOMContentLoaded', () => {
+            // Sync saved bell count
+            const badge = document.getElementById('bellCounterBadge');
+            if (badge) badge.textContent = bellRingsCount;
+
+            populateBatchDropdowns();
+            initPassImages();
+            loadNostalgiaState();
+            renderNostalgiaCards();
+            renderMilestones();
+            loadIgPostsState();
+            renderIgGallery();
+            renderPillars();
+            renderScheduleTimeline();
+            loadPolaroidMemories();
+            renderPolaroids();
+            updateLivePass();
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        });
+    </script>
+    <!-- Official Instagram Embed SDK -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
